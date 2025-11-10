@@ -54,108 +54,108 @@ async function createTemplateField(fieldData) {
 async function main() {
     console.log('Adding 10 new AI analysis templates...\n');
 
-    // Template 1: AI Business Idea Validator
+    // Template 1: t("auto.add_templates.c10a6f9d")
     const template1Id = await createTemplate({
-        name: 'AI Business Idea Validator',
-        description: 'Validate your business idea with AI-powered analysis covering core concept, financial hypotheses, feasibility, market validation, and critical assumptions.',
-        category: 'Business Validation',
+        name: 't("auto.add_templates.c10a6f9d")',
+        description: 't("auto.add_templates.341baaf8")',
+        category: 't("auto.add_templates.51ce077b")',
         duration: 25,
         isPopular: true
     });
 
-    // Template 2: AI-Powered SWOT & PESTEL Builder
+    // Template 2: t("auto.add_templates.e4dc7e8c")
     const template2Id = await createTemplate({
-        name: 'AI-Powered SWOT & PESTEL Builder',
-        description: 'Comprehensive SWOT and PESTEL analysis to evaluate your business strengths, weaknesses, opportunities, threats, and external factors.',
+        name: 't("auto.add_templates.e4dc7e8c")',
+        description: 't("auto.add_templates.a05629f0")',
         category: 'SWOT & PESTEL',
         duration: 30,
         isPopular: true
     });
 
-    // Template 3: Building the Marketing Plan
+    // Template 3: Building the t("auto.add_templates.7cb15e41") Plan
     const template3Id = await createTemplate({
-        name: 'Building the Marketing Plan',
-        description: 'Create a comprehensive marketing plan with target audience definition, budget allocation, channels, USP, and KPIs.',
-        category: 'Marketing',
+        name: 'Building the t("auto.add_templates.7cb15e41") Plan',
+        description: 't("auto.add_templates.e50be642")',
+        category: 't("auto.add_templates.7cb15e41")',
         duration: 20,
         isPopular: false
     });
 
-    // Template 4: Financial Performance Assessment
+    // Template 4: t("auto.add_templates.35f15607") Performance Assessment
     const template4Id = await createTemplate({
-        name: 'Financial Performance Assessment',
-        description: 'Evaluate your financial health with detailed analysis of revenue, costs, profits, and advanced financial metrics.',
-        category: 'Financial',
+        name: 't("auto.add_templates.35f15607") Performance Assessment',
+        description: 't("auto.add_templates.ebbe09d1")',
+        category: 't("auto.add_templates.35f15607")',
         duration: 20,
         isPopular: false
     });
 
-    // Template 5: Assessing Growth Readiness
+    // Template 5: Assessing t("auto.add_templates.699aed86") Readiness
     const template5Id = await createTemplate({
-        name: 'Assessing Growth Readiness',
-        description: 'Determine your business readiness for growth with operational efficiency, leadership, scalability, and financial runway analysis.',
-        category: 'Growth',
+        name: 'Assessing t("auto.add_templates.699aed86") Readiness',
+        description: 't("auto.add_templates.9e2bd18d")',
+        category: 't("auto.add_templates.699aed86")',
         duration: 25,
         isPopular: false
     });
 
-    // Template 6: Gap Analysis
+    // Template 6: t("auto.add_templates.341d1d54")
     const template6Id = await createTemplate({
-        name: 'Gap Analysis',
-        description: 'Identify gaps between your current state and future goals with financial baselines, operational capabilities, and market position analysis.',
-        category: 'Gap Analysis',
+        name: 't("auto.add_templates.341d1d54")',
+        description: 't("auto.add_templates.dd606b87")',
+        category: 't("auto.add_templates.341d1d54")',
         duration: 20,
         isPopular: false
     });
 
-    // Template 7: AI Business Health Check
+    // Template 7: AI Business t("auto.add_templates.9583dd0b")
     const template7Id = await createTemplate({
-        name: 'AI Business Health Check',
-        description: 'Comprehensive health check of your business covering identity, financial indicators, operational efficiency, market relationships, and business vitals.',
-        category: 'Health Check',
+        name: 'AI Business t("auto.add_templates.9583dd0b")',
+        description: 't("auto.add_templates.0e409094")',
+        category: 't("auto.add_templates.9583dd0b")',
         duration: 15,
         isPopular: false
     });
 
-    // Template 8: Digital Maturity Assessment
+    // Template 8: t("auto.add_templates.0bb83092") Maturity Assessment
     const template8Id = await createTemplate({
-        name: 'Digital Maturity Assessment',
-        description: 'Assess your digital maturity across identity, investment, tools, engagement, and dimensions of digital capability.',
-        category: 'Digital',
+        name: 't("auto.add_templates.0bb83092") Maturity Assessment',
+        description: 't("auto.add_templates.99c57dee")',
+        category: 't("auto.add_templates.0bb83092")',
         duration: 25,
         isPopular: false
     });
 
-    // Template 9: AI Pitch Deck Generator
+    // Template 9: AI t("auto.add_templates.7ad75512") Generator
     const template9Id = await createTemplate({
-        name: 'AI Pitch Deck Generator',
-        description: 'Create a compelling pitch deck with core idea, financial model, product details, competitive landscape, and team information.',
-        category: 'Pitch Deck',
+        name: 'AI t("auto.add_templates.7ad75512") Generator',
+        description: 't("auto.add_templates.ab3ebb31")',
+        category: 't("auto.add_templates.7ad75512")',
         duration: 30,
         isPopular: true
     });
 
-    // Template 10: AI-Based Market Opportunity Analyzer
+    // Template 10: AI-Based t("auto.add_templates.176d74bf") Analyzer
     const template10Id = await createTemplate({
-        name: 'AI-Based Market Opportunity Analyzer',
-        description: 'Analyze market opportunities with company identity, financial capacity, core competencies, strategic posture, and market evaluation.',
-        category: 'Market Opportunity',
+        name: 'AI-Based t("auto.add_templates.176d74bf") Analyzer',
+        description: 't("auto.add_templates.9910f2a8")',
+        category: 't("auto.add_templates.176d74bf")',
         duration: 25,
         isPopular: false
     });
 
     console.log('\nTemplate creation completed. Template fields need to be added manually through the developer interface.');
     console.log('The following templates were created:');
-    console.log(`1. AI Business Idea Validator (ID: ${template1Id})`);
-    console.log(`2. AI-Powered SWOT & PESTEL Builder (ID: ${template2Id})`);
-    console.log(`3. Building the Marketing Plan (ID: ${template3Id})`);
-    console.log(`4. Financial Performance Assessment (ID: ${template4Id})`);
-    console.log(`5. Assessing Growth Readiness (ID: ${template5Id})`);
-    console.log(`6. Gap Analysis (ID: ${template6Id})`);
-    console.log(`7. AI Business Health Check (ID: ${template7Id})`);
-    console.log(`8. Digital Maturity Assessment (ID: ${template8Id})`);
-    console.log(`9. AI Pitch Deck Generator (ID: ${template9Id})`);
-    console.log(`10. AI-Based Market Opportunity Analyzer (ID: ${template10Id})`);
+    console.log(`1. t("auto.add_templates.c10a6f9d") (ID: ${template1Id})`);
+    console.log(`2. t("auto.add_templates.e4dc7e8c") (ID: ${template2Id})`);
+    console.log(`3. Building the t("auto.add_templates.7cb15e41") Plan (ID: ${template3Id})`);
+    console.log(`4. t("auto.add_templates.35f15607") Performance Assessment (ID: ${template4Id})`);
+    console.log(`5. Assessing t("auto.add_templates.699aed86") Readiness (ID: ${template5Id})`);
+    console.log(`6. t("auto.add_templates.341d1d54") (ID: ${template6Id})`);
+    console.log(`7. AI Business t("auto.add_templates.9583dd0b") (ID: ${template7Id})`);
+    console.log(`8. t("auto.add_templates.0bb83092") Maturity Assessment (ID: ${template8Id})`);
+    console.log(`9. AI t("auto.add_templates.7ad75512") Generator (ID: ${template9Id})`);
+    console.log(`10. AI-Based t("auto.add_templates.176d74bf") Analyzer (ID: ${template10Id})`);
 }
 
 // Run the script

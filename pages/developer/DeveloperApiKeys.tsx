@@ -14,15 +14,15 @@ const DeveloperApiKeys: React.FC = () => {
     const [apiKeys, setApiKeys] = useState<ApiKey[]>([
         {
             id: '1',
-            name: 'Gemini API Key',
-            key: 'AIzaSyCLCeMXElGa7qZoV2c3x0Xt2PXMQMWIS4E',
+            name: 't("auto.DeveloperApiKeys.2ada11af")',
+            key: 't("auto.DeveloperApiKeys.9e1a0fac")',
             createdAt: '2023-01-15',
             lastUsed: '2023-06-20',
             status: 'active'
         },
         {
             id: '2',
-            name: 'Analytics Service Key',
+            name: 't("auto.DeveloperApiKeys.a36b60e8")',
             key: 'sk_analytics_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
             createdAt: '2023-03-22',
             lastUsed: '2023-06-18',
@@ -30,10 +30,10 @@ const DeveloperApiKeys: React.FC = () => {
         },
         {
             id: '3',
-            name: 'Backup Service Key',
+            name: 't("auto.DeveloperApiKeys.cc106ce1")',
             key: 'sk_backup_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
             createdAt: '2023-05-10',
-            lastUsed: 'Never',
+            lastUsed: 't("auto.DeveloperApiKeys.6e7b34fa")',
             status: 'disabled'
         }
     ]);
@@ -65,7 +65,7 @@ const DeveloperApiKeys: React.FC = () => {
             name: newKeyName,
             key: `sk_${newKeyName.toLowerCase().replace(/\s+/g, '_')}_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`,
             createdAt: new Date().toISOString().split('T')[0],
-            lastUsed: 'Never',
+            lastUsed: 't("auto.DeveloperApiKeys.6e7b34fa")',
             status: 'active'
         };
 
@@ -231,7 +231,7 @@ const DeveloperApiKeys: React.FC = () => {
             <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-blue-800 mb-2">API Key Security Best Practices</h3>
                 <ul className="list-disc list-inside text-blue-700 space-y-1">
-                    <li>Never share API keys in public repositories or client-side code</li>
+                    <li>t("auto.DeveloperApiKeys.6e7b34fa") share API keys in public repositories or client-side code</li>
                     <li>Rotate keys regularly and revoke unused keys</li>
                     <li>Use environment variables to store keys in production</li>
                     <li>Monitor key usage and set up alerts for unusual activity</li>

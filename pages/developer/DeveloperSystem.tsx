@@ -8,7 +8,7 @@ const DeveloperSystem: React.FC = () => {
     // Mock data for demonstration
     const systemInfo = {
         version: 'v1.2.4',
-        environment: 'Development',
+        environment: 't("auto.DeveloperSystem.330f49df")',
         uptime: '12 days, 4 hours, 32 minutes',
         memoryUsage: '1.2 GB / 4 GB',
         cpuUsage: '24%',

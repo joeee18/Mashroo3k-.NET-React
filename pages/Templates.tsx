@@ -11,49 +11,49 @@ import { listTemplates, Template } from '../services/templateService';
 
 // Icon mapping for categories
 const categoryIcons: Record<string, React.ComponentType<any>> = {
-    'Food & Beverage': Utensils,
-    'Technology': ShoppingCart,
-    'Health & Fitness': Dumbbell,
-    'General': Rocket,
-    'Business Validation': CheckCircle,
+    't("auto.Templates.b813006f")': Utensils,
+    't("auto.Templates.e7e767d7")': ShoppingCart,
+    't("auto.Templates.6aea32f9")': Dumbbell,
+    't("auto.Templates.0db37792")': Rocket,
+    't("auto.Templates.51ce077b")': CheckCircle,
     'SWOT & PESTEL': BarChart,
-    'Marketing': Target,
-    'Financial': TrendingUp,
-    'Growth': TrendingUp,
-    'Gap Analysis': Wrench,
-    'Health Check': Shield,
-    'Digital': Database,
-    'Pitch Deck': FileText,
-    'Market Opportunity': Globe,
-    'Readiness': Zap
+    't("auto.Templates.7cb15e41")': Target,
+    't("auto.Templates.35f15607")': TrendingUp,
+    't("auto.Templates.699aed86")': TrendingUp,
+    't("auto.Templates.341d1d54")': Wrench,
+    't("auto.Templates.9583dd0b")': Shield,
+    't("auto.Templates.0bb83092")': Database,
+    't("auto.Templates.7ad75512")': FileText,
+    't("auto.Templates.176d74bf")': Globe,
+    't("auto.Templates.7236964c")': Zap
 };
 
 // Icon mapping for specific templates
 const templateIcons: Record<string, React.ComponentType<any>> = {
-    'AI Business Idea Validator': CheckCircle,
-    'AI-Powered SWOT & PESTEL Builder': BarChart,
-    'Building the Marketing Plan': Target,
-    'Financial Performance Assessment': TrendingUp,
-    'Assessing Growth Readiness': Zap,
-    'Gap Analysis': Wrench,
-    'AI Business Health Check': Shield,
-    'Digital Maturity Assessment': Database,
-    'AI Pitch Deck Generator': FileText,
-    'AI-Based Market Opportunity Analyzer': Globe
+    't("auto.Templates.c10a6f9d")': CheckCircle,
+    't("auto.Templates.e4dc7e8c")': BarChart,
+    't("auto.Templates.96be386e")': Target,
+    't("auto.Templates.3c6bcd7e")': TrendingUp,
+    't("auto.Templates.9630fbdb")': Zap,
+    't("auto.Templates.341d1d54")': Wrench,
+    't("auto.Templates.9ea7b94e")': Shield,
+    't("auto.Templates.cfab3aaf")': Database,
+    't("auto.Templates.c49db04f")': FileText,
+    't("auto.Templates.b2dfe667")': Globe
 };
 
 // Template name to translation key mapping
 const templateNameToKey: Record<string, string> = {
-    'AI Business Idea Validator': 'developer.templateBuilder.aiBusinessValidator',
-    'AI-Powered SWOT & PESTEL Builder': 'developer.templateBuilder.aiSwotBuilder',
-    'AI Pitch Deck Generator': 'developer.templateBuilder.aiPitchDeckGenerator',
-    'Building the Marketing Plan': 'developer.templateBuilder.buildingMarketingPlan',
-    'Financial Performance Assessment': 'developer.templateBuilder.financialPerformanceAssessment',
-    'Assessing Growth Readiness': 'developer.templateBuilder.assessingGrowthReadiness',
-    'Gap Analysis': 'developer.templateBuilder.gapAnalysis',
-    'AI Business Health Check': 'developer.templateBuilder.aiBusinessHealthCheck',
-    'Digital Maturity Assessment': 'developer.templateBuilder.digitalMaturityAssessment',
-    'AI-Based Market Opportunity Analyzer': 'developer.templateBuilder.aiMarketOpportunityAnalyzer'
+    't("auto.Templates.c10a6f9d")': 'developer.templateBuilder.aiBusinessValidator',
+    't("auto.Templates.e4dc7e8c")': 'developer.templateBuilder.aiSwotBuilder',
+    't("auto.Templates.c49db04f")': 'developer.templateBuilder.aiPitchDeckGenerator',
+    't("auto.Templates.96be386e")': 'developer.templateBuilder.buildingt("auto.Templates.7cb15e41")Plan',
+    't("auto.Templates.3c6bcd7e")': 'developer.templateBuilder.financialPerformanceAssessment',
+    't("auto.Templates.9630fbdb")': 'developer.templateBuilder.assessingt("auto.Templates.699aed86")t("auto.Templates.7236964c")',
+    't("auto.Templates.341d1d54")': 'developer.templateBuilder.gapAnalysis',
+    't("auto.Templates.9ea7b94e")': 'developer.templateBuilder.aiBusinessHealthCheck',
+    't("auto.Templates.cfab3aaf")': 'developer.templateBuilder.digitalMaturityAssessment',
+    't("auto.Templates.b2dfe667")': 'developer.templateBuilder.aiMarketOpportunityAnalyzer'
 };
 
 // Template description to translation key mapping
@@ -61,9 +61,9 @@ const templateDescToKey: Record<string, string> = {
     'Validate your business idea with AI-powered analysis covering core concept, financial hypotheses, feasibility, market validation, and critical assumptions.': 'developer.templateBuilder.aiBusinessValidatorDesc',
     'Comprehensive SWOT and PESTEL analysis to evaluate your business strengths, weaknesses, opportunities, threats, and external factors.': 'developer.templateBuilder.aiSwotBuilderDesc',
     'Create a professional investor pitch deck with market analysis, financial projections, and business model.': 'developer.templateBuilder.aiPitchDeckGeneratorDesc',
-    'Develop a comprehensive marketing strategy covering target audience, marketing channels, pricing techniques, and content plans.': 'developer.templateBuilder.buildingMarketingPlanDesc',
+    'Develop a comprehensive marketing strategy covering target audience, marketing channels, pricing techniques, and content plans.': 'developer.templateBuilder.buildingt("auto.Templates.7cb15e41")PlanDesc',
     'Comprehensive financial performance analysis to identify strengths, weaknesses, and operational efficiency improvements.': 'developer.templateBuilder.financialPerformanceAssessmentDesc',
-    'Evaluate your organization\'s readiness for expansion focusing on infrastructure, resources, and strategies needed for growth.': 'developer.templateBuilder.assessingGrowthReadinessDesc',
+    'Evaluate your organization\'s readiness for expansion focusing on infrastructure, resources, and strategies needed for growth.': 'developer.templateBuilder.assessingt("auto.Templates.699aed86")t("auto.Templates.7236964c")Desc',
     'Identify gaps between current performance and desired goals across all areas of your business.': 'developer.templateBuilder.gapAnalysisDesc',
     'Comprehensive business health check covering financial, operational, marketing, and organizational aspects.': 'developer.templateBuilder.aiBusinessHealthCheckDesc',
     'Assess your organization\'s readiness for digital transformation and adoption of modern technologies.': 'developer.templateBuilder.digitalMaturityAssessmentDesc',

@@ -55,7 +55,7 @@ class Program
             fieldOrder = 1,
             label = "_localizer["auto.Program.4fd0a37b"]",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Technology\",\"Healthcare\",\"Finance\",\"Retail\",\"Food & Beverage\",\"Education\",\"Manufacturing\",\"Entertainment\",\"Transportation\",\"Real Estate\",\"Other\"]",
+            fieldOptions = "_localizer["auto.Program.f33ff08d"]",
             rationale = "_localizer["auto.Program.55b90fc4"]",
             isRequired = true
         });
@@ -76,7 +76,7 @@ class Program
             fieldOrder = 3,
             label = "_localizer["auto.Program.1d5ad3d3"]",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Startup\",\"SME\",\"Enterprise\",\"Non-Profit\",\"Government\"]",
+            fieldOptions = "_localizer["auto.Program.0768109e"]",
             rationale = "_localizer["auto.Program.b00f6293"]",
             isRequired = true
         });
@@ -218,7 +218,7 @@ class Program
             fieldOrder = 1,
             label = "_localizer["auto.Program.4fd0a37b"]",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Technology\",\"Healthcare\",\"Finance\",\"Retail\",\"Food & Beverage\",\"Education\",\"Manufacturing\",\"Entertainment\",\"Transportation\",\"Real Estate\",\"Other\"]",
+            fieldOptions = "_localizer["auto.Program.f33ff08d"]",
             rationale = "_localizer["auto.Program.d18c9ad0"]",
             isRequired = true
         });
@@ -304,9 +304,9 @@ class Program
             templateId = 32,
             stageNumber = 5,
             fieldOrder = 1,
-            label = "Debt-to-Equity Ratio",
+            label = "_localizer["auto.Program.654db757"]",
             inputType = "number",
-            rationale = "Debt-to-equity ratio for Business Health Check",
+            rationale = "_localizer["auto.Program.f9e32240"]",
             isRequired = true,
             mustBePositive = true
         });
@@ -368,7 +368,7 @@ class Program
             fieldOrder = 1,
             label = "_localizer["auto.Program.4fd0a37b"]",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Technology\",\"Healthcare\",\"Finance\",\"Retail\",\"Food & Beverage\",\"Education\",\"Manufacturing\",\"Entertainment\",\"Transportation\",\"Real Estate\",\"Other\"]",
+            fieldOptions = "_localizer["auto.Program.f33ff08d"]",
             rationale = "_localizer["auto.Program.cf5b7ddc"]",
             isRequired = true
         });
@@ -412,9 +412,9 @@ class Program
             templateId = 33,
             stageNumber = 3,
             fieldOrder = 0,
-            label = "Main Business Software Used (CRM, ERP, etc.)",
+            label = "_localizer["auto.Program.2a93d1fe"]",
             inputType = "_localizer["auto.Program.b66abfe0"]",
-            fieldOptions = "[\"CRM\",\"ERP\",\"HR Management\",\"Accounting Software\",\"Project Management\",\"Analytics Tools\",\"E-commerce Platform\",\"Other\"]",
+            fieldOptions = "_localizer["auto.Program.b96d8804"]",
             rationale = "_localizer["auto.Program.c76b74de"]",
             isRequired = true
         });
@@ -437,7 +437,7 @@ class Program
             fieldOrder = 0,
             label = "_localizer["auto.Program.53941045"]",
             inputType = "_localizer["auto.Program.b66abfe0"]",
-            fieldOptions = "[\"Website\",\"Mobile App\",\"Social Media\",\"Chatbots\",\"Email\",\"Online Support\",\"Video Calls\",\"Other\"]",
+            fieldOptions = "_localizer["auto.Program.770e6967"]",
             rationale = "_localizer["auto.Program.6bf8bf5d"]",
             isRequired = true
         });
@@ -448,7 +448,7 @@ class Program
             fieldOrder = 1,
             label = "_localizer["auto.Program.2643e327"]",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Yes\",\"No\"]",
+            fieldOptions = "_localizer["auto.Program.fa8c0369"]",
             rationale = "_localizer["auto.Program.940c55fe"]",
             isRequired = true
         });
@@ -471,7 +471,7 @@ class Program
             fieldOrder = 1,
             label = "How integrated are your core technological systems (e.g., CRM, ERP)?",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Not integrated\",\"Partially integrated\",\"Fully integrated\"]",
+            fieldOptions = "_localizer["auto.Program.cd21ff71"]",
             rationale = "_localizer["auto.Program.91b6b23c"]",
             isRequired = true
         });
@@ -480,7 +480,7 @@ class Program
             templateId = 33,
             stageNumber = 5,
             fieldOrder = 2,
-            label = "To what extent do you use data analytics for decision-making?",
+            label = "_localizer["auto.Program.d06b434a"]",
             inputType = "_localizer["auto.Program.10bf08f0"]",
             fieldOptions = "{\"min\":1,\"max\":5}",
             rationale = "_localizer["auto.Program.717bd358"]",
@@ -663,7 +663,7 @@ class Program
             fieldOrder = 1,
             label = "_localizer["auto.Program.6df73ff7"]",
             inputType = "_localizer["auto.Program.ad973c25"]",
-            fieldOptions = "[\"Technology\",\"Healthcare\",\"Finance\",\"Retail\",\"Food & Beverage\",\"Education\",\"Manufacturing\",\"Entertainment\",\"Transportation\",\"Real Estate\",\"Other\"]",
+            fieldOptions = "_localizer["auto.Program.f33ff08d"]",
             rationale = "_localizer["auto.Program.841c71da"]",
             isRequired = true
         });
@@ -719,7 +719,7 @@ class Program
             templateId = 35,
             stageNumber = 4,
             fieldOrder = 0,
-            label = "Company's Long-Term Vision and Strategic Goals",
+            label = "_localizer["auto.Program.48775719"]",
             inputType = "_localizer["auto.Program.6394d816"]",
             rationale = "_localizer["auto.Program.dd801db8"]",
             isRequired = true,

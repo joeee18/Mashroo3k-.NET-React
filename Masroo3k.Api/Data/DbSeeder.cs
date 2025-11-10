@@ -74,7 +74,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.aiBusinessValidator"]",
-                    Description = "Validate your business idea with AI-powered analysis covering core concept, financial hypotheses, feasibility, market validation, and critical assumptions.",
+                    Description = "_localizer["auto.DbSeeder.341baaf8"]",
                     Category = "_localizer["templateBuilder.businessValidation"]",
                     Duration = 25,
                     IsPopular = true,
@@ -82,8 +82,8 @@ namespace Masroo3k.Api.Data
                 },
                 new Template
                 {
-                    Name = "AI-Powered SWOT & PESTEL Builder",
-                    Description = "Comprehensive SWOT and PESTEL analysis to evaluate your business strengths, weaknesses, opportunities, threats, and external factors.",
+                    Name = "_localizer["auto.DbSeeder.e4dc7e8c"]",
+                    Description = "_localizer["auto.DbSeeder.a05629f0"]",
                     Category = "_localizer["templateBuilder.swotAndPestel"]",
                     Duration = 30,
                     IsPopular = true,
@@ -92,7 +92,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.buildingMarketingPlan"]",
-                    Description = "Create a comprehensive marketing plan with target audience definition, budget allocation, channels, USP, and KPIs.",
+                    Description = "_localizer["auto.DbSeeder.e50be642"]",
                     Category = "_localizer["templateBuilder.marketing"]",
                     Duration = 20,
                     IsPopular = false,
@@ -101,7 +101,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.financialPerformanceAssessment"]",
-                    Description = "Evaluate your financial health with detailed analysis of revenue, costs, profits, and advanced financial metrics.",
+                    Description = "_localizer["auto.DbSeeder.ebbe09d1"]",
                     Category = "_localizer["templateBuilder.financial"]",
                     Duration = 20,
                     IsPopular = false,
@@ -110,7 +110,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.assessingGrowthReadiness"]",
-                    Description = "Determine your business readiness for growth with operational efficiency, leadership, scalability, and financial runway analysis.",
+                    Description = "_localizer["auto.DbSeeder.9e2bd18d"]",
                     Category = "_localizer["templateBuilder.growth"]",
                     Duration = 25,
                     IsPopular = false,
@@ -119,7 +119,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.gapAnalysis"]",
-                    Description = "Identify gaps between your current state and future goals with financial baselines, operational capabilities, and market position analysis.",
+                    Description = "_localizer["auto.DbSeeder.dd606b87"]",
                     Category = "_localizer["templateBuilder.gapAnalysis"]",
                     Duration = 20,
                     IsPopular = false,
@@ -128,7 +128,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.aiBusinessHealthCheck"]",
-                    Description = "Comprehensive health check of your business covering identity, financial indicators, operational efficiency, market relationships, and business vitals.",
+                    Description = "_localizer["auto.DbSeeder.0e409094"]",
                     Category = "_localizer["templateBuilder.healthCheck"]",
                     Duration = 15,
                     IsPopular = false,
@@ -137,7 +137,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.digitalMaturityAssessment"]",
-                    Description = "Assess your digital maturity across identity, investment, tools, engagement, and dimensions of digital capability.",
+                    Description = "_localizer["auto.DbSeeder.99c57dee"]",
                     Category = "_localizer["templateBuilder.digital"]",
                     Duration = 25,
                     IsPopular = false,
@@ -146,7 +146,7 @@ namespace Masroo3k.Api.Data
                 new Template
                 {
                     Name = "_localizer["templateBuilder.aiPitchDeckGenerator"]",
-                    Description = "Create a compelling pitch deck with core idea, financial model, product details, competitive landscape, and team information.",
+                    Description = "_localizer["auto.DbSeeder.ab3ebb31"]",
                     Category = "_localizer["templateBuilder.pitchDeck"]",
                     Duration = 30,
                     IsPopular = true,
@@ -154,8 +154,8 @@ namespace Masroo3k.Api.Data
                 },
                 new Template
                 {
-                    Name = "AI-Based Market Opportunity Analyzer",
-                    Description = "Analyze market opportunities with company identity, financial capacity, core competencies, strategic posture, and market evaluation.",
+                    Name = "_localizer["auto.DbSeeder.b2dfe667"]",
+                    Description = "_localizer["auto.DbSeeder.9910f2a8"]",
                     Category = "_localizer["auto.add_templates.176d74bf"]",
                     Duration = 25,
                     IsPopular = false,

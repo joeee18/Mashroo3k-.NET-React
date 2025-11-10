@@ -375,7 +375,7 @@ const FieldBuilder: React.FC<FieldBuilderProps> = ({ field, onSave, onCancel }) 
                                                 checked={mustBeValidUrl}
                                                 onChange={(e) => setMustBeValidUrl(e.target.checked)}
                                                 className="h-4 w-4 text-green-600 border-gray-300 rounded focus:ring-green-500"
-                                                aria-label="Must be valid URL"
+                                                aria-label="t("auto.FieldBuilder.63edf2bc")"
                                             />
                                             <label htmlFor="t("auto.CreateField.84c07958")" className="ml-2 block text-sm text-gray-700">
                                                 {t('fieldBuilder.validUrl')}

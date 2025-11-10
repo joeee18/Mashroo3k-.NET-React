@@ -124,7 +124,7 @@ const Profile: React.FC = () => {
             console.error('Failed to update profile:', error);
             setMessage({ 
                 type: 'error', 
-                text: error?.message || 'Failed to update profile. Please try again.' 
+                text: error?.message || 't("auto.Profile.23073bac")' 
             });
         } finally {
             setLoading(false);
@@ -265,7 +265,7 @@ const Profile: React.FC = () => {
                                     className={`w-full h-11 px-4 border rounded-md ${
                                         errors.confirmPassword ? 'border-red-300' : 'border-gray-300'
                                     } focus:outline-none focus:ring-2 focus:ring-primary-green/20`}
-                                    placeholder="Confirm new password"
+                                    placeholder="t("auto.Profile.6ab96a5d")"
                                 />
                                 {errors.confirmPassword && (
                                     <p className="mt-1 text-sm text-red-600">{errors.confirmPassword}</p>

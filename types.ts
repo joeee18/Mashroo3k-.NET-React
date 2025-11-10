@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface User {
+export interface t("auto.types.8f9bfe9d") {
   id?: string;
   name: string;
   email: string;
@@ -27,14 +27,14 @@ export interface RecentAnalysis {
   type: string;
   date: string;
   score: number;
-  status: 'Complete' | 'Processing' | 'Draft';
+  status: 't("auto.types.ae94f80b")' | 't("auto.types.643562a9")' | 't("auto.types.f03ab16c")';
 }
 
 export interface MyAnalysis {
   id: string;
   name: string;
   details: string;
-  riskLevel: 'Low' | 'Medium' | 'High';
+  riskLevel: 't("auto.types.28d0edd0")' | 't("auto.types.87f8a6ab")' | 't("auto.types.655d20c1")';
   successPercent: number;
   date: string;
   investment: number;
@@ -52,12 +52,12 @@ export interface Template {
   icon: React.ComponentType<{ className?: string }>;
 }
 
-export interface AdminUser {
+export interface t("auto.types.e3afed00")t("auto.types.8f9bfe9d") {
   id: string;
   name: string;
   email: string;
-  role: 'Admin' | 'User';
-  status: 'Active' | 'Inactive';
+  role: 't("auto.types.e3afed00")' | 't("auto.types.8f9bfe9d")';
+  status: 't("auto.types.4d3d769b")' | 't("auto.types.3cab03c0")';
   analyses: number;
   lastLogin: string;
 }

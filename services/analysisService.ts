@@ -51,7 +51,7 @@ export async function createAnalysis(
   const title =
     (formData.step1?.businessName as string) ||
     (formData.step1?.name as string) ||
-    'New Business Analysis';
+    't("auto.analysisService.026ef8ad")';
 
   const payload = {
     title,

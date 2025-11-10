@@ -21,7 +21,7 @@ namespace Masroo3k.Api.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.10")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+                .HasAnnotation("_localizer["auto.20251108003019_InitialCreateSQLServer.Designer.9aaff26f"]", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
@@ -275,7 +275,7 @@ namespace Masroo3k.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TemplateId", "StageNumber", "FieldOrder");
+                    b.HasIndex("_localizer["auto.20251108003019_InitialCreateSQLServer.Designer.ef4a6b2d"]", "StageNumber", "FieldOrder");
 
                     b.ToTable("TemplateFields");
                 });

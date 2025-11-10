@@ -169,7 +169,7 @@ const DeveloperTools: React.FC = () => {
                                         value={consoleInput}
                                         onChange={(e) => setConsoleInput(e.target.value)}
                                         className="flex-1 bg-transparent text-gray-300 outline-none"
-                                        placeholder="Enter command..."
+                                        placeholder="t("auto.DeveloperTools.61e5516f")"
                                         aria-label="t("auto.DeveloperTools.6524a8bc")"
                                     />
                                 </form>

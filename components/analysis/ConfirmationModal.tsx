@@ -72,11 +72,11 @@ const ConfirmationModal: React.FC<{ onCancel: () => void }> = ({ onCancel }) => 
                 </div>
                 <p className="text-gray-600 mb-6">We've collected all the information needed to create your comprehensive business analysis report.</p>
                 <div className="space-y-3 mb-6 bg-gray-50 rounded-lg p-4 border border-gray-200">
-                    <CheckItem text="Basic Information - Complete" />
-                    <CheckItem text="Financial Details - Complete" />
-                    <CheckItem text="Operations - Complete" />
-                    <CheckItem text="Market & Strategy - Complete" />
-                    <CheckItem text="Industry Specific - Complete" />
+                    <CheckItem text="t("auto.ConfirmationModal.0a03c56a")" />
+                    <CheckItem text="t("auto.ConfirmationModal.9b1a8e5c")" />
+                    <CheckItem text="t("auto.ConfirmationModal.4353306d")" />
+                    <CheckItem text="t("auto.ConfirmationModal.117a882f")" />
+                    <CheckItem text="t("auto.ConfirmationModal.f95cefeb")" />
                 </div>
                 <div className="t("auto.ConfirmationModal.830a1afa")">
                     <h3 className="font-semibold text-gray-900 mb-3">This analysis will include:</h3>

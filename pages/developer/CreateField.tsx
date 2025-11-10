@@ -131,7 +131,7 @@ const CreateField: React.FC = () => {
             // Using the correct route pattern from App.tsx: /developer/template/:id/edit
             navigate(`/developer/template/${parsedTemplateId}/edit`, {
                 state: {
-                    message: 'Field created successfully!',
+                    message: 't("auto.CreateField.cb35dfd0")',
                     messageType: 'success'
                 }
             });

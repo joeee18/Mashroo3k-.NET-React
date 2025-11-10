@@ -156,8 +156,8 @@ const Notifications: React.FC = () => {
         const date = new Date(dateString);
         // Check if date is valid
         if (isNaN(date.getTime())) {
-            console.log('Invalid date string:', dateString);
-            return 'Invalid date';
+            console.log('t("auto.Notifications.6983e1db") string:', dateString);
+            return 't("auto.Notifications.6983e1db")';
         }
         
         const now = new Date();
@@ -169,7 +169,7 @@ const Notifications: React.FC = () => {
         
         // Less than a minute
         if (diffInSeconds < 60) {
-            return 'Just now';
+            return 't("auto.Notifications.58038ee4")';
         }
         
         const diffInMinutes = Math.floor(diffInSeconds / 60);
@@ -188,9 +188,9 @@ const Notifications: React.FC = () => {
         
         const diffInDays = Math.floor(diffInHours / 24);
         
-        // Yesterday (1 day ago)
+        // t("auto.Notifications.ebfe9ce8") (1 day ago)
         if (diffInDays === 1) {
-            return 'Yesterday';
+            return 't("auto.Notifications.ebfe9ce8")';
         }
         
         // Less than a week

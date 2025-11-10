@@ -209,7 +209,7 @@ Provide realistic and actionable insights. Return ONLY the JSON object, no addit
                 ExecutiveSummary = $"The proposed {request.Industry} business shows promising potential with calculated risks. Success depends heavily on execution strategy and market timing.",
                 Recommendations = new List<string>
                 {
-                    "Conduct detailed market research before full-scale launch",
+                    "_localizer["auto.GeminiAIService.9d51466b"]",
                     "_localizer["auto.GeminiAIService.7faec420"]",
                     "_localizer["auto.GeminiAIService.f67edda4"]",
                     "_localizer["auto.GeminiAIService.a54b0018"]"

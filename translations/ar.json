@@ -705,16 +705,16 @@
   "auto.Program.1120894c": "ما هي الحواجز الرئيسية لدخول هذا السوق؟",
   "auto.Program.f30d9f9b": "حواجز الدخول لمهلّل فرص السوق",
   "auto.add_templates.a02439ec": "POST",
-  "auto.add_templates.176d74bf": "فرصة السوق",
+  "auto.add_templates.176d74bf": "__TRANSLATE__: Market Opportunity",
   "auto.App.266a1f7c": "react",
   "auto.App.bce05974": "نظرة عامة",
   "auto.App.88622c70": "مفاتيح API",
   "auto.UserFormModal.a5a3f0f2": "Promise",
-  "auto.UserFormModal.ff0f4960": "الاسم مطلوب",
-  "auto.UserFormModal.0caffe1d": "البريد الإلكتروني مطلوب",
-  "auto.UserFormModal.99fc635c": "كلمة المرور مطلوبة للمستخدمين الجدد",
-  "auto.UserFormModal.82c7fd48": "يجب أن تكون كلمة المرور على الأقل 6 أحرف",
-  "auto.UserFormModal.77fd875b": "فشل في حفظ المستخدم",
+  "auto.UserFormModal.ff0f4960": "__TRANSLATE__: Name is required",
+  "auto.UserFormModal.0caffe1d": "__TRANSLATE__: Email is required",
+  "auto.UserFormModal.99fc635c": "__TRANSLATE__: Password is required for new users",
+  "auto.UserFormModal.82c7fd48": "__TRANSLATE__: Password must be at least 6 characters",
+  "auto.UserFormModal.77fd875b": "__TRANSLATE__: Failed to save user",
   "auto.UserFormModal.3015af65": "إضافة مستخدم جديد",
   "auto.UserFormModal.a87b2916": "أدخل الاسم الكامل",
   "auto.UserFormModal.0c83f57c": "البريد الإلكتروني",
@@ -773,8 +773,8 @@
   "auto.NotificationDropdown.7b83d3f0": "تحذير",
   "auto.NotificationDropdown.7528035a": "GET",
   "auto.NotificationDropdown.3e75383a": "PUT",
-  "auto.NotificationDropdown.6983e1db": "تاريخ غير صالح",
-  "auto.NotificationDropdown.58038ee4": "الآن",
+  "auto.NotificationDropdown.6983e1db": "__TRANSLATE__: Invalid date",
+  "auto.NotificationDropdown.58038ee4": "__TRANSLATE__: Just now",
   "auto.NotificationDropdown.cce16c45": "en-US",
   "auto.NotificationDropdown.4f09daa9": "قصير",
   "auto.NotificationDropdown.49057168": "رقمي",
@@ -786,7 +786,7 @@
   "auto.NotificationDropdown.58111686": "وضع علامة كمقروء",
   "auto.AnalysisContext.d6dba0f7": "تعذر تحليل المسودة من التخزين المحلي",
   "auto.AnalysisContext.5139c4f4": "= 1 && step",
-  "auto.AnalysisContext.5fdfe93e": "يجب استخدام useAnalysis داخل AnalysisProvider",
+  "auto.AnalysisContext.5fdfe93e": "__TRANSLATE__: useAnalysis must be used within an AnalysisProvider",
   "auto.AuthContext.a7e18338": "مسؤول النظام",
   "auto.AuthContext.4c2a904b": "جون دو",
   "auto.AuthContext.adaaa618": "لم يتم العثور على جلسة مستخدم مخزنة",
@@ -795,11 +795,11 @@
   "auto.AuthContext.27aad983": "التنقل إلى لوحة تحكم المطور",
   "auto.AuthContext.4d552383": "التنقل إلى لوحة التحكم",
   "auto.AuthContext.811adfa4": "تسجيل الخروج ناجح",
-  "auto.AuthContext.62174c7e": "يجب استخدام useAuth داخل AuthProvider",
+  "auto.AuthContext.62174c7e": "__TRANSLATE__: useAuth must be used within an AuthProvider",
   "auto.LanguageContext.8512ae7d": "اللغة",
   "auto.LanguageContext.620a9b24": " || savedLanguage === ",
   "auto.LanguageContext.a8cfde63": "كائن",
-  "auto.LanguageContext.3d3ddf7d": "يجب استخدام useLanguage داخل LanguageProvider",
+  "auto.LanguageContext.3d3ddf7d": "__TRANSLATE__: useLanguage must be used within a LanguageProvider",
   "auto.index.63a9f0ea": "root",
   "auto.index.50762d65": "تعذر العثور على عنصر root للتركيب عليه",
   "auto.ActivityLogsController.b1c94ca2": "الكل",
@@ -946,7 +946,7 @@
   "auto.AdminLogs.160a390e": "searchTerm",
   "auto.AdminLogs.418c5509": "الإجراء",
   "auto.AdminLogs.f6cdd856": "الخطورة",
-  "auto.AdminLogs.3d9f6c15": "هل أنت متأكد من رغبتك في حذف السجلات الأقدم من 90 يومًا؟",
+  "auto.AdminLogs.3d9f6c15": "__TRANSLATE__: Are you sure you want to delete logs older than 90 days?",
   "auto.AdminLogs.7e85bcb6": "حرج",
   "auto.AdminLogs.2e9aedd5": "2-digit",
   "auto.AdminLogs.da10807f": "سجلات نشاط الإدارة",
@@ -989,19 +989,19 @@
   "auto.AdminTemplates.e97a34ee": "محتوى إدارة النماذج هنا",
   "auto.AdminUsers.a181a603": "الكل",
   "auto.AdminUsers.3991706e": "فشل في تحميل المستخدمين",
-  "auto.AdminUsers.87545152": "تم تحديث المستخدم بنجاح!",
-  "auto.AdminUsers.7292e116": "تم إنشاء المستخدم بنجاح!",
+  "auto.AdminUsers.87545152": "__TRANSLATE__: User updated successfully!",
+  "auto.AdminUsers.7292e116": "__TRANSLATE__: User created successfully!",
   "auto.AdminUsers.18f80748": "${userName}",
-  "auto.AdminUsers.4d04c185": "تم حذف المستخدم بنجاح!",
-  "auto.AdminUsers.7355690b": "فشل في حذف المستخدم",
+  "auto.AdminUsers.4d04c185": "__TRANSLATE__: User deleted successfully!",
+  "auto.AdminUsers.7355690b": "__TRANSLATE__: Failed to delete user",
   "auto.AdminUsers.55aaa373": "تصفية المستخدمين حسب الدور",
   "auto.AdminUsers.61baad7c": "تصفية المستخدمين حسب الحالة",
   "auto.AdminUsers.ff88093a": "p-4",
   "auto.AdminWebsite.724537d0": "محتوى تكوين الموقع الإلكتروني هنا",
-  "auto.Dashboard.643562a9": "قيد المعالجة",
+  "auto.Dashboard.643562a9": "__TRANSLATE__: Processing",
   "auto.Dashboard.abec3686": "text-right",
-  "auto.CreateField.e3f482ab": "معرف النموذج غير صالح",
-  "auto.CreateField.cb35dfd0": "تم إنشاء الحقل بنجاح!",
+  "auto.CreateField.e3f482ab": "__TRANSLATE__: Invalid template ID",
+  "auto.CreateField.cb35dfd0": "__TRANSLATE__: Field created successfully!",
   "auto.CreateField.028d2a3b": "space-y-6",
   "auto.CreateField.2a9d32d1": "isRequired",
   "auto.CreateField.bd293dc2": "mustBePositive",
@@ -1014,13 +1014,13 @@
   "auto.CreateField.a2be132b": " strokeWidth=",
   "auto.CreateField.f15d6b21": "opacity-75",
   "auto.DeveloperApiKeys.075ae3d2": "معطل",
-  "auto.DeveloperApiKeys.2ada11af": "مفتاح API الخاص بـ Gemini",
-  "auto.DeveloperApiKeys.9e1a0fac": "AIzaSyCLCeMXElGa7qZoV2c3x0Xt2PXMQMWIS4E",
-  "auto.DeveloperApiKeys.a36b60e8": "مفتاح خدمة التحليلات",
+  "auto.DeveloperApiKeys.2ada11af": "__TRANSLATE__: Gemini API Key",
+  "auto.DeveloperApiKeys.9e1a0fac": "__TRANSLATE__: AIzaSyCLCeMXElGa7qZoV2c3x0Xt2PXMQMWIS4E",
+  "auto.DeveloperApiKeys.a36b60e8": "__TRANSLATE__: Analytics Service Key",
   "auto.DeveloperApiKeys.f6076002": "sk_analytics_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-  "auto.DeveloperApiKeys.cc106ce1": "مفتاح خدمة النسخ الاحتياطي",
+  "auto.DeveloperApiKeys.cc106ce1": "__TRANSLATE__: Backup Service Key",
   "auto.DeveloperApiKeys.4883f99e": "sk_backup_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-  "auto.DeveloperApiKeys.6e7b34fa": "أبدًا",
+  "auto.DeveloperApiKeys.6e7b34fa": "__TRANSLATE__: Never",
   "auto.DeveloperApiKeys.c2574296": "إدارة جميع مفاتيح API وتكاملات الخدمات",
   "auto.DeveloperApiKeys.4c17f113": "إنشاء مفتاح API جديد",
   "auto.DeveloperApiKeys.f00db52e": "أدخل اسم المفتاح",
@@ -1067,10 +1067,10 @@
   "auto.DeveloperLogs.1ea4c3ab": "warn",
   "auto.DeveloperLogs.ad42f669": "debug",
   "auto.DeveloperLogs.bc17c97c": "user-123",
-  "auto.DeveloperLogs.c62bc59b": "تمت معالجة طلب تحليل النموذج في 142 مللي ثانية",
+  "auto.DeveloperLogs.c62bc59b": "__TRANSLATE__: Template analysis request processed in 142ms",
   "auto.DeveloperLogs.79a08784": "نموذج جديد ",
   "auto.DeveloperLogs.643bf5c5": "admin-456",
-  "auto.DeveloperLogs.30565460": "اكتمل النسخ الاحتياطي المجدول بنجاح",
+  "auto.DeveloperLogs.30565460": "__TRANSLATE__: Scheduled backup completed successfully",
   "auto.DeveloperLogs.a64b0b03": "user-789",
   "auto.DeveloperLogs.d5a121c8": "فشل في تحميل السجلات",
   "auto.DeveloperLogs.39b94259": "راقب نشاط النظام وحل المشاكل",
@@ -1084,7 +1084,7 @@
   "auto.DeveloperLogs.1613592f": "جميع المصادر",
   "auto.DeveloperLogs.7603848b": "لم يتم العثور على سجلات",
   "auto.DeveloperSystem.ccd10663": "configuration",
-  "auto.DeveloperSystem.330f49df": "التطوير",
+  "auto.DeveloperSystem.330f49df": "__TRANSLATE__: Development",
   "auto.DeveloperSystem.1ecac34a": "12 يومًا، 4 ساعات، 32 دقيقة",
   "auto.DeveloperSystem.1aa0017b": "VITE_API_URL",
   "auto.DeveloperSystem.35244279": "VITE_GEMINI_API_KEY",
@@ -1251,9 +1251,9 @@
   "auto.MyAnalyses.64630544": "userRole",
   "auto.MyAnalyses.fc44a3bc": "><line x1=",
   "auto.NewAnalysis.856ce86e": "تحليل أعمال شامل",
-  "auto.Notifications.5468ac23": "فشل في تحميل الإشعارات",
+  "auto.Notifications.5468ac23": "__TRANSLATE__: Failed to load notifications",
   "auto.Notifications.237020a6": "opacity-60",
-  "auto.Notifications.ebfe9ce8": "أمس",
+  "auto.Notifications.ebfe9ce8": "__TRANSLATE__: Yesterday",
   "auto.Notifications.f6354291": "ابقَ على اطلاع بأحدث تنبيهاتك ورسائلك",
   "auto.Notifications.774172d5": "عندما يكون لديك إشعارات، ستظهر هنا",
   "auto.Notifications.5bb31a11": "حذف الإشعار",
@@ -1271,8 +1271,8 @@
   "auto.Profile.14a88b9d": "newPassword",
   "auto.Profile.dfd6a38c": "confirmPassword",
   "auto.Report.5f7427c1": "recharts",
-  "auto.Report.a2fdd734": "التوقعات المالية",
-  "auto.Report.0139c29e": "المعايير",
+  "auto.Report.a2fdd734": "__TRANSLATE__: Financial Projections",
+  "auto.Report.0139c29e": "__TRANSLATE__: Benchmarks",
   "auto.Report.c8a0f540": "#28a745",
   "auto.Report.056051c1": "#0066cc",
   "auto.Report.4db9239a": "#ffc107",
@@ -1281,14 +1281,14 @@
   "auto.Report.3eaca17c": "bg-red-100",
   "auto.Report.f35e74c1": "فشل في تحميل التقرير",
   "auto.Report.ad921d60": "غير معروف",
-  "auto.Report.27684e08": "مخاطر السوق",
-  "auto.Report.df4fcb25": "المخاطر المالية",
-  "auto.Report.c432e51e": "المخاطر التشغيلية",
-  "auto.Report.decc5532": "المخاطر التنظيمية",
-  "auto.Report.83de191c": "الاستراتيجية",
-  "auto.Report.c482980d": "المالية",
-  "auto.Report.14eba957": "العائد على الاستثمار",
-  "auto.Report.b72031e9": "مستوى مخاطر السوق",
+  "auto.Report.27684e08": "__TRANSLATE__: Market Risk",
+  "auto.Report.df4fcb25": "__TRANSLATE__: Financial Risk",
+  "auto.Report.c432e51e": "__TRANSLATE__: Operational Risk",
+  "auto.Report.decc5532": "__TRANSLATE__: Regulatory Risk",
+  "auto.Report.83de191c": "__TRANSLATE__: Strategy",
+  "auto.Report.c482980d": "__TRANSLATE__: Finance",
+  "auto.Report.14eba957": "__TRANSLATE__: Return on Investment",
+  "auto.Report.b72031e9": "__TRANSLATE__: Market Risk Level",
   "auto.Report.c219ab9c": "space-y-16",
   "auto.Report.ae382999": "space-y-8",
   "auto.Report.906618a5": "احتمالية تحقيق أهداف العمل",
@@ -1338,15 +1338,162 @@
   "auto.Report.e354ca1a": "بدء تحليل جديد",
   "auto.Report.df838392": "جدولة استشارة",
   "auto.SignUp.a0fbf479": "fullName",
-  "auto.Templates.b813006f": "الطعام والشراب",
-  "auto.Templates.e7e767d7": "التكنولوجيا",
-  "auto.Templates.6aea32f9": "الصحة واللياقة البدنية",
-  "auto.Templates.7236964c": "الاستعداد",
+  "auto.Templates.b813006f": "__TRANSLATE__: Food & Beverage",
+  "auto.Templates.e7e767d7": "__TRANSLATE__: Technology",
+  "auto.Templates.6aea32f9": "__TRANSLATE__: Health & Fitness",
+  "auto.Templates.7236964c": "__TRANSLATE__: Readiness",
   "auto.apiClient.50defae1": "عنوان URL الأساسي لـ API غير مكون",
-  "auto.types.f03ab16c": "مسودة",
+  "auto.types.f03ab16c": "__TRANSLATE__: Draft",
   "auto.logger.dc30ec20": "DEBUG",
   "auto.logger.551b723e": "INFO",
   "auto.logger.32bd8a1d": "WARN",
   "auto.vite.config.d6fe1d0b": "path",
-  "auto.vite.config.4da066da": "vite"
+  "auto.vite.config.4da066da": "vite",
+  "auto.add_templates.c10a6f9d": "__TRANSLATE__: AI Business Idea Validator",
+  "auto.add_templates.341baaf8": "__TRANSLATE__: Validate your business idea with AI-powered analysis covering core concept, financial hypotheses, feasibility, market validation, and critical assumptions.",
+  "auto.add_templates.51ce077b": "__TRANSLATE__: Business Validation",
+  "auto.add_templates.e4dc7e8c": "__TRANSLATE__: AI-Powered SWOT & PESTEL Builder",
+  "auto.add_templates.a05629f0": "__TRANSLATE__: Comprehensive SWOT and PESTEL analysis to evaluate your business strengths, weaknesses, opportunities, threats, and external factors.",
+  "auto.add_templates.96be386e": "__TRANSLATE__: Building the Marketing Plan",
+  "auto.add_templates.e50be642": "__TRANSLATE__: Create a comprehensive marketing plan with target audience definition, budget allocation, channels, USP, and KPIs.",
+  "auto.add_templates.7cb15e41": "__TRANSLATE__: Marketing",
+  "auto.add_templates.3c6bcd7e": "__TRANSLATE__: Financial Performance Assessment",
+  "auto.add_templates.ebbe09d1": "__TRANSLATE__: Evaluate your financial health with detailed analysis of revenue, costs, profits, and advanced financial metrics.",
+  "auto.add_templates.35f15607": "__TRANSLATE__: Financial",
+  "auto.add_templates.9630fbdb": "__TRANSLATE__: Assessing Growth Readiness",
+  "auto.add_templates.9e2bd18d": "__TRANSLATE__: Determine your business readiness for growth with operational efficiency, leadership, scalability, and financial runway analysis.",
+  "auto.add_templates.699aed86": "__TRANSLATE__: Growth",
+  "auto.add_templates.341d1d54": "__TRANSLATE__: Gap Analysis",
+  "auto.add_templates.dd606b87": "__TRANSLATE__: Identify gaps between your current state and future goals with financial baselines, operational capabilities, and market position analysis.",
+  "auto.add_templates.9ea7b94e": "__TRANSLATE__: AI Business Health Check",
+  "auto.add_templates.0e409094": "__TRANSLATE__: Comprehensive health check of your business covering identity, financial indicators, operational efficiency, market relationships, and business vitals.",
+  "auto.add_templates.9583dd0b": "__TRANSLATE__: Health Check",
+  "auto.add_templates.cfab3aaf": "__TRANSLATE__: Digital Maturity Assessment",
+  "auto.add_templates.99c57dee": "__TRANSLATE__: Assess your digital maturity across identity, investment, tools, engagement, and dimensions of digital capability.",
+  "auto.add_templates.0bb83092": "__TRANSLATE__: Digital",
+  "auto.add_templates.c49db04f": "__TRANSLATE__: AI Pitch Deck Generator",
+  "auto.add_templates.ab3ebb31": "__TRANSLATE__: Create a compelling pitch deck with core idea, financial model, product details, competitive landscape, and team information.",
+  "auto.add_templates.7ad75512": "__TRANSLATE__: Pitch Deck",
+  "auto.add_templates.b2dfe667": "__TRANSLATE__: AI-Based Market Opportunity Analyzer",
+  "auto.add_templates.9910f2a8": "__TRANSLATE__: Analyze market opportunities with company identity, financial capacity, core competencies, strategic posture, and market evaluation.",
+  "auto.ConfirmationModal.0a03c56a": "__TRANSLATE__: Basic Information - Complete",
+  "auto.ConfirmationModal.9b1a8e5c": "__TRANSLATE__: Financial Details - Complete",
+  "auto.ConfirmationModal.4353306d": "__TRANSLATE__: Operations - Complete",
+  "auto.ConfirmationModal.117a882f": "__TRANSLATE__: Market & Strategy - Complete",
+  "auto.ConfirmationModal.f95cefeb": "__TRANSLATE__: Industry Specific - Complete",
+  "auto.AdminLogs.5e915424": "__TRANSLATE__: Are you sure you want to delete this activity log? This action cannot be undone.",
+  "auto.AdminLogs.0ea33efb": "__TRANSLATE__: Auto-refresh interval",
+  "auto.AdminLogs.412a9c03": "__TRANSLATE__: Search logs...",
+  "auto.AdminUsers.77fd875b": "__TRANSLATE__: Failed to save user",
+  "auto.AdminUsers.f5e8b59c": "__TRANSLATE__: Search users...",
+  "auto.Dashboard.ae94f80b": "__TRANSLATE__: Complete",
+  "auto.DeveloperLogs.f33a1d77": "__TRANSLATE__: AuthService",
+  "auto.DeveloperLogs.d66f8bd9": "__TRANSLATE__: Failed to connect to database: Connection timeout",
+  "auto.DeveloperLogs.66daa9bd": "__TRANSLATE__: DatabaseService",
+  "auto.DeveloperLogs.f12a3e09": "__TRANSLATE__: SystemMonitor",
+  "auto.DeveloperLogs.8295eefe": "__TRANSLATE__: TemplateService",
+  "auto.DeveloperLogs.677e02b2": "__TRANSLATE__: AuthMiddleware",
+  "auto.DeveloperLogs.67676a01": "__TRANSLATE__: BackupService",
+  "auto.DeveloperLogs.c33672fc": "__TRANSLATE__: Rate limit exceeded for user user-789",
+  "auto.DeveloperLogs.123fd323": "__TRANSLATE__: RateLimiter",
+  "auto.DeveloperLogs.412a9c03": "__TRANSLATE__: Search logs...",
+  "auto.DeveloperTemplates.6d0f42e7": "__TRANSLATE__: Failed to load templates",
+  "auto.DeveloperTools.61e5516f": "__TRANSLATE__: Enter command...",
+  "auto.DeveloperUsers.f5e8b59c": "__TRANSLATE__: Search users...",
+  "auto.FieldBuilder.63edf2bc": "__TRANSLATE__: Must be valid URL",
+  "auto.NewAnalysis.e3f482ab": "__TRANSLATE__: Invalid template ID",
+  "auto.Notifications.6983e1db": "__TRANSLATE__: Invalid date",
+  "auto.Notifications.58038ee4": "__TRANSLATE__: Just now",
+  "auto.Profile.23073bac": "__TRANSLATE__: Failed to update profile. Please try again.",
+  "auto.Profile.6ab96a5d": "__TRANSLATE__: Confirm new password",
+  "auto.Report.7fc6813c": "__TRANSLATE__: Market volatility and competitive pressure could impact growth trajectory and customer acquisition costs.",
+  "auto.Report.8f43b89d": "__TRANSLATE__: Diversify target markets, establish strong brand positioning, and maintain competitive pricing strategies.",
+  "auto.Report.7c6affd5": "__TRANSLATE__: Cash flow management and capital requirements may challenge operational sustainability.",
+  "auto.Report.cf04123e": "__TRANSLATE__: Maintain adequate reserves, establish credit lines, and implement strict financial controls.",
+  "auto.Report.e2ec9c9e": "__TRANSLATE__: Scaling operations while maintaining quality and efficiency standards.",
+  "auto.Report.56d3e022": "__TRANSLATE__: Implement standardized processes, invest in training, and utilize technology for automation.",
+  "auto.Report.28d0edd0": "__TRANSLATE__: Low",
+  "auto.Report.9c952070": "__TRANSLATE__: Compliance requirements and regulatory changes could affect operations.",
+  "auto.Report.c0cc525f": "__TRANSLATE__: Stay updated on regulations, maintain compliance documentation, and seek legal counsel.",
+  "auto.Report.655d20c1": "__TRANSLATE__: High",
+  "auto.Report.87f8a6ab": "__TRANSLATE__: Medium",
+  "auto.Report.456d0deb": "__TRANSLATE__: Operations",
+  "auto.Report.01596674": "__TRANSLATE__: Success Probability",
+  "auto.Report.9cf6d0d6": "__TRANSLATE__: Overall Score",
+  "auto.Report.b37be9d8": "__TRANSLATE__: 📈 Opportunity for improvement to reach industry standards.",
+  "auto.Report.a573d92b": "__TRANSLATE__: Executive Summary",
+  "auto.Report.3177ea52": "__TRANSLATE__: Risk Assessment",
+  "auto.Report.5259ae4a": "__TRANSLATE__: Recommendations",
+  "auto.Templates.0db37792": "__TRANSLATE__: General",
+  "auto.Templates.51ce077b": "__TRANSLATE__: Business Validation",
+  "auto.Templates.7cb15e41": "__TRANSLATE__: Marketing",
+  "auto.Templates.35f15607": "__TRANSLATE__: Financial",
+  "auto.Templates.699aed86": "__TRANSLATE__: Growth",
+  "auto.Templates.341d1d54": "__TRANSLATE__: Gap Analysis",
+  "auto.Templates.9583dd0b": "__TRANSLATE__: Health Check",
+  "auto.Templates.0bb83092": "__TRANSLATE__: Digital",
+  "auto.Templates.7ad75512": "__TRANSLATE__: Pitch Deck",
+  "auto.Templates.176d74bf": "__TRANSLATE__: Market Opportunity",
+  "auto.Templates.c10a6f9d": "__TRANSLATE__: AI Business Idea Validator",
+  "auto.Templates.e4dc7e8c": "__TRANSLATE__: AI-Powered SWOT & PESTEL Builder",
+  "auto.Templates.96be386e": "__TRANSLATE__: Building the Marketing Plan",
+  "auto.Templates.3c6bcd7e": "__TRANSLATE__: Financial Performance Assessment",
+  "auto.Templates.9630fbdb": "__TRANSLATE__: Assessing Growth Readiness",
+  "auto.Templates.9ea7b94e": "__TRANSLATE__: AI Business Health Check",
+  "auto.Templates.cfab3aaf": "__TRANSLATE__: Digital Maturity Assessment",
+  "auto.Templates.c49db04f": "__TRANSLATE__: AI Pitch Deck Generator",
+  "auto.Templates.b2dfe667": "__TRANSLATE__: AI-Based Market Opportunity Analyzer",
+  "auto.Templates.0573888f": "__TRANSLATE__: Failed to load templates. Please try again later.",
+  "auto.analysisService.026ef8ad": "__TRANSLATE__: New Business Analysis",
+  "auto.types.ae94f80b": "__TRANSLATE__: Complete",
+  "auto.types.643562a9": "__TRANSLATE__: Processing",
+  "auto.types.28d0edd0": "__TRANSLATE__: Low",
+  "auto.types.87f8a6ab": "__TRANSLATE__: Medium",
+  "auto.types.655d20c1": "__TRANSLATE__: High",
+  "auto.types.e3afed00": "__TRANSLATE__: Admin",
+  "auto.types.8f9bfe9d": "__TRANSLATE__: User",
+  "auto.types.4d3d769b": "__TRANSLATE__: Active",
+  "auto.types.3cab03c0": "__TRANSLATE__: Inactive",
+  "auto.Program.f33ff08d": "__TRANSLATE__: [\\\"Technology\\\",\\\"Healthcare\\\",\\\"Finance\\\",\\\"Retail\\\",\\\"Food & Beverage\\\",\\\"Education\\\",\\\"Manufacturing\\\",\\\"Entertainment\\\",\\\"Transportation\\\",\\\"Real Estate\\\",\\\"Other\\\"]",
+  "auto.Program.0768109e": "__TRANSLATE__: [\\\"Startup\\\",\\\"SME\\\",\\\"Enterprise\\\",\\\"Non-Profit\\\",\\\"Government\\\"]",
+  "auto.Program.654db757": "__TRANSLATE__: Debt-to-Equity Ratio",
+  "auto.Program.f9e32240": "__TRANSLATE__: Debt-to-equity ratio for Business Health Check",
+  "auto.Program.2a93d1fe": "__TRANSLATE__: Main Business Software Used (CRM, ERP, etc.)",
+  "auto.Program.b96d8804": "__TRANSLATE__: [\\\"CRM\\\",\\\"ERP\\\",\\\"HR Management\\\",\\\"Accounting Software\\\",\\\"Project Management\\\",\\\"Analytics Tools\\\",\\\"E-commerce Platform\\\",\\\"Other\\\"]",
+  "auto.Program.770e6967": "__TRANSLATE__: [\\\"Website\\\",\\\"Mobile App\\\",\\\"Social Media\\\",\\\"Chatbots\\\",\\\"Email\\\",\\\"Online Support\\\",\\\"Video Calls\\\",\\\"Other\\\"]",
+  "auto.Program.fa8c0369": "__TRANSLATE__: [\\\"Yes\\\",\\\"No\\\"]",
+  "auto.Program.cd21ff71": "__TRANSLATE__: [\\\"Not integrated\\\",\\\"Partially integrated\\\",\\\"Fully integrated\\\"]",
+  "auto.Program.d06b434a": "__TRANSLATE__: To what extent do you use data analytics for decision-making?",
+  "auto.Program.48775719": "__TRANSLATE__: Company's Long-Term Vision and Strategic Goals",
+  "auto.DbSeeder.341baaf8": "__TRANSLATE__: Validate your business idea with AI-powered analysis covering core concept, financial hypotheses, feasibility, market validation, and critical assumptions.",
+  "auto.DbSeeder.e4dc7e8c": "__TRANSLATE__: AI-Powered SWOT & PESTEL Builder",
+  "auto.DbSeeder.a05629f0": "__TRANSLATE__: Comprehensive SWOT and PESTEL analysis to evaluate your business strengths, weaknesses, opportunities, threats, and external factors.",
+  "auto.DbSeeder.e50be642": "__TRANSLATE__: Create a comprehensive marketing plan with target audience definition, budget allocation, channels, USP, and KPIs.",
+  "auto.DbSeeder.ebbe09d1": "__TRANSLATE__: Evaluate your financial health with detailed analysis of revenue, costs, profits, and advanced financial metrics.",
+  "auto.DbSeeder.9e2bd18d": "__TRANSLATE__: Determine your business readiness for growth with operational efficiency, leadership, scalability, and financial runway analysis.",
+  "auto.DbSeeder.dd606b87": "__TRANSLATE__: Identify gaps between your current state and future goals with financial baselines, operational capabilities, and market position analysis.",
+  "auto.DbSeeder.0e409094": "__TRANSLATE__: Comprehensive health check of your business covering identity, financial indicators, operational efficiency, market relationships, and business vitals.",
+  "auto.DbSeeder.99c57dee": "__TRANSLATE__: Assess your digital maturity across identity, investment, tools, engagement, and dimensions of digital capability.",
+  "auto.DbSeeder.ab3ebb31": "__TRANSLATE__: Create a compelling pitch deck with core idea, financial model, product details, competitive landscape, and team information.",
+  "auto.DbSeeder.b2dfe667": "__TRANSLATE__: AI-Based Market Opportunity Analyzer",
+  "auto.DbSeeder.9910f2a8": "__TRANSLATE__: Analyze market opportunities with company identity, financial capacity, core competencies, strategic posture, and market evaluation.",
+  "auto.20251108003019_InitialCreateSQLServer.aa269a05": "__TRANSLATE__: SqlServer:Identity",
+  "auto.20251108003019_InitialCreateSQLServer.c271c1ac": "__TRANSLATE__: TemplateFields",
+  "auto.20251108003019_InitialCreateSQLServer.8a7f7338": "__TRANSLATE__: ActivityLogs",
+  "auto.20251108003019_InitialCreateSQLServer.46d295c8": "__TRANSLATE__: CreatedAt",
+  "auto.20251108003019_InitialCreateSQLServer.4733e94f": "__TRANSLATE__: UserId",
+  "auto.20251108003019_InitialCreateSQLServer.4908588c": "__TRANSLATE__: OwnerId",
+  "auto.20251108003019_InitialCreateSQLServer.ef4a6b2d": "__TRANSLATE__: TemplateId",
+  "auto.20251108003019_InitialCreateSQLServer.f13857fd": "__TRANSLATE__: IsRead",
+  "auto.20251108003019_InitialCreateSQLServer.Designer.9aaff26f": "__TRANSLATE__: Relational:MaxIdentifierLength",
+  "auto.20251108003019_InitialCreateSQLServer.Designer.4733e94f": "__TRANSLATE__: UserId",
+  "auto.20251108003019_InitialCreateSQLServer.Designer.4908588c": "__TRANSLATE__: OwnerId",
+  "auto.20251108003019_InitialCreateSQLServer.Designer.ef4a6b2d": "__TRANSLATE__: TemplateId",
+  "auto.20251108003019_InitialCreateSQLServer.Designer.a4ca5edd": "__TRANSLATE__: Fields",
+  "auto.AppDbContextModelSnapshot.9aaff26f": "__TRANSLATE__: Relational:MaxIdentifierLength",
+  "auto.AppDbContextModelSnapshot.4733e94f": "__TRANSLATE__: UserId",
+  "auto.AppDbContextModelSnapshot.4908588c": "__TRANSLATE__: OwnerId",
+  "auto.AppDbContextModelSnapshot.ef4a6b2d": "__TRANSLATE__: TemplateId",
+  "auto.AppDbContextModelSnapshot.a4ca5edd": "__TRANSLATE__: Fields",
+  "auto.GeminiAIService.9d51466b": "__TRANSLATE__: Conduct detailed market research before full-scale launch"
 }

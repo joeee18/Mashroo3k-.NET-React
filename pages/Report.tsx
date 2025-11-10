@@ -6,21 +6,21 @@ import { getAnalysisById } from '../services/analysisService';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
-type Tab = 'Executive Summary' | 'Financial Projections' | 'Risk Assessment' | 'Recommendations' | 'Benchmarks';
-type RiskLevel = 'Low' | 'Medium' | 'High' | 'Critical';
+type Tab = 't("auto.Report.a573d92b")' | 't("auto.Report.a2fdd734")' | 't("auto.Report.3177ea52")' | 't("auto.Report.5259ae4a")' | 't("auto.Report.0139c29e")';
+type RiskLevel = 't("auto.Report.28d0edd0")' | 't("auto.Report.87f8a6ab")' | 't("auto.Report.655d20c1")' | 'Critical';
 
 const COLORS = ['#28a745', '#0066cc', '#ffc107', '#dc3545', '#6f42c1'];
 
 const riskStyles = {
-    Low: { text: 'text-green-600', bg: 'bg-green-100', value: 25 },
-    Medium: { text: 'text-yellow-600', bg: 'bg-yellow-100', value: 50 },
-    High: { text: 'text-orange-600', bg: 'bg-orange-100', value: 75 },
+    t("auto.Report.28d0edd0"): { text: 'text-green-600', bg: 'bg-green-100', value: 25 },
+    t("auto.Report.87f8a6ab"): { text: 'text-yellow-600', bg: 'bg-yellow-100', value: 50 },
+    t("auto.Report.655d20c1"): { text: 'text-orange-600', bg: 'bg-orange-100', value: 75 },
     Critical: { text: 'text-red-600', bg: 'bg-red-100', value: 100 },
 };
 const priorityStyles = {
-    High: 'bg-red-50 border-red-200',
-    Medium: 'bg-yellow-50 border-yellow-200',
-    Low: 'bg-green-50 border-green-200'
+    t("auto.Report.655d20c1"): 'bg-red-50 border-red-200',
+    t("auto.Report.87f8a6ab"): 'bg-yellow-50 border-yellow-200',
+    t("auto.Report.28d0edd0"): 'bg-green-50 border-green-200'
 }
 
 const Report: React.FC = () => {
@@ -89,7 +89,7 @@ const Report: React.FC = () => {
             pdf.text(`Generated on: ${new Date().toLocaleDateString()}`, pageWidth / 2, 55, { align: 'center' });
             
             pdf.setFontSize(14);
-            pdf.text(`Overall Score: ${analysis.score}/100`, pageWidth / 2, 70, { align: 'center' });
+            pdf.text(`t("auto.Report.9cf6d0d6"): ${analysis.score}/100`, pageWidth / 2, 70, { align: 'center' });
             
             // Add content image on next page
             pdf.addPage();
@@ -152,35 +152,35 @@ const Report: React.FC = () => {
     const generateRiskAssessment = () => {
         if (!analysis) return [];
         
-        const riskLevel = analysis.riskLevel || 'Medium';
+        const riskLevel = analysis.riskLevel || 't("auto.Report.87f8a6ab")';
         const risks = [
             {
-                risk: 'Market Risk',
+                risk: 't("auto.Report.27684e08")',
                 level: riskLevel,
                 score: riskStyles[riskLevel as RiskLevel]?.value || 50,
-                description: 'Market volatility and competitive pressure could impact growth trajectory and customer acquisition costs.',
-                mitigation: 'Diversify target markets, establish strong brand positioning, and maintain competitive pricing strategies.'
+                description: 't("auto.Report.7fc6813c")',
+                mitigation: 't("auto.Report.8f43b89d")'
             },
             {
-                risk: 'Financial Risk',
-                level: analysis.expectedROI < 0 ? 'High' : analysis.expectedROI > 50 ? 'Low' : 'Medium',
+                risk: 't("auto.Report.df4fcb25")',
+                level: analysis.expectedROI < 0 ? 't("auto.Report.655d20c1")' : analysis.expectedROI > 50 ? 't("auto.Report.28d0edd0")' : 't("auto.Report.87f8a6ab")',
                 score: analysis.expectedROI < 0 ? 75 : analysis.expectedROI > 50 ? 25 : 50,
-                description: 'Cash flow management and capital requirements may challenge operational sustainability.',
-                mitigation: 'Maintain adequate reserves, establish credit lines, and implement strict financial controls.'
+                description: 't("auto.Report.7c6affd5")',
+                mitigation: 't("auto.Report.cf04123e")'
             },
             {
-                risk: 'Operational Risk',
-                level: analysis.successPercent > 70 ? 'Low' : analysis.successPercent > 50 ? 'Medium' : 'High',
+                risk: 't("auto.Report.c432e51e")',
+                level: analysis.successPercent > 70 ? 't("auto.Report.28d0edd0")' : analysis.successPercent > 50 ? 't("auto.Report.87f8a6ab")' : 't("auto.Report.655d20c1")',
                 score: analysis.successPercent > 70 ? 25 : analysis.successPercent > 50 ? 50 : 75,
-                description: 'Scaling operations while maintaining quality and efficiency standards.',
-                mitigation: 'Implement standardized processes, invest in training, and utilize technology for automation.'
+                description: 't("auto.Report.e2ec9c9e")',
+                mitigation: 't("auto.Report.56d3e022")'
             },
             {
-                risk: 'Regulatory Risk',
-                level: 'Low',
+                risk: 't("auto.Report.decc5532")',
+                level: 't("auto.Report.28d0edd0")',
                 score: 25,
-                description: 'Compliance requirements and regulatory changes could affect operations.',
-                mitigation: 'Stay updated on regulations, maintain compliance documentation, and seek legal counsel.'
+                description: 't("auto.Report.9c952070")',
+                mitigation: 't("auto.Report.c0cc525f")'
             }
         ];
         
@@ -188,46 +188,46 @@ const Report: React.FC = () => {
     };
 
     // Generate recommendations based on AI analysis
-    const generateRecommendations = () => {
+    const generatet("auto.Report.5259ae4a") = () => {
         if (!analysis || !analysis.recommendations) return [];
         
         return analysis.recommendations.map((rec: string, index: number) => ({
-            priority: index === 0 ? 'High' : index === 1 ? 'High' : 'Medium',
+            priority: index === 0 ? 't("auto.Report.655d20c1")' : index === 1 ? 't("auto.Report.655d20c1")' : 't("auto.Report.87f8a6ab")',
             title: rec.split('.')[0] || rec.substring(0, 50),
             impact: Math.round(8 + Math.random() * 2),
-            category: index % 3 === 0 ? 'Strategy' : index % 3 === 1 ? 'Operations' : 'Finance',
+            category: index % 3 === 0 ? 't("auto.Report.83de191c")' : index % 3 === 1 ? 't("auto.Report.456d0deb")' : 't("auto.Report.c482980d")',
             description: rec
         }));
     };
 
     // Generate benchmarks data
-    const generateBenchmarks = () => {
+    const generatet("auto.Report.0139c29e") = () => {
         if (!analysis) return [];
         
         return [
             {
-                name: 'Success Probability',
+                name: 't("auto.Report.01596674")',
                 yourValue: analysis.successPercent || 50,
                 industryAverage: 55,
                 topPerformers: 85,
                 unit: '%'
             },
             {
-                name: 'Return on Investment',
+                name: 't("auto.Report.14eba957")',
                 yourValue: Math.abs(analysis.expectedROI || 0),
                 industryAverage: 25,
                 topPerformers: 60,
                 unit: '%'
             },
             {
-                name: 'Overall Score',
+                name: 't("auto.Report.9cf6d0d6")',
                 yourValue: analysis.score || 50,
                 industryAverage: 65,
                 topPerformers: 90,
                 unit: '/100'
             },
             {
-                name: 'Market Risk Level',
+                name: 't("auto.Report.b72031e9")',
                 yourValue: 100 - (riskStyles[analysis.riskLevel as RiskLevel]?.value || 50),
                 industryAverage: 60,
                 topPerformers: 85,
@@ -238,23 +238,23 @@ const Report: React.FC = () => {
 
     const financialData = React.useMemo(() => generateFinancialProjections(), [analysis]);
     const riskData = React.useMemo(() => generateRiskAssessment(), [analysis]);
-    const recommendations = React.useMemo(() => generateRecommendations(), [analysis]);
-    const benchmarks = React.useMemo(() => generateBenchmarks(), [analysis]);
+    const recommendations = React.useMemo(() => generatet("auto.Report.5259ae4a")(), [analysis]);
+    const benchmarks = React.useMemo(() => generatet("auto.Report.0139c29e")(), [analysis]);
 
     const renderContent = () => {
         // In PDF export mode, render all tabs
         if (pdfExportMode) {
             return (
                 <div className="t("auto.Report.c219ab9c")">
-                    {/* Executive Summary */}
+                    {/* t("auto.Report.a573d92b") */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Executive Summary</h2>
+                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">t("auto.Report.a573d92b")</h2>
                         <div className="t("auto.Report.ae382999")">
                             {analysis.executiveSummary && (
                                 <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                                     <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
                                         <Lightbulb className="w-5 h-5 text-blue-600" />
-                                        Executive Summary
+                                        t("auto.Report.a573d92b")
                                     </h3>
                                     <p className="text-gray-700 leading-relaxed">{analysis.executiveSummary}</p>
                                 </div>
@@ -299,9 +299,9 @@ const Report: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Financial Projections */}
+                    {/* t("auto.Report.a2fdd734") */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Financial Projections</h2>
+                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">t("auto.Report.a2fdd734")</h2>
                         <div className="t("auto.Report.ae382999")">
                             <div>
                                 <h3 className="text-xl font-bold mb-4">5-Year Revenue & Profit Projections</h3>
@@ -381,9 +381,9 @@ const Report: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Risk Assessment */}
+                    {/* t("auto.Report.3177ea52") */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Risk Assessment</h2>
+                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">t("auto.Report.3177ea52")</h2>
                         <div className="t("auto.Report.ae382999")">
                             <div>
                                 <h3 className="text-xl font-bold mb-4">Risk Analysis Overview</h3>
@@ -398,7 +398,7 @@ const Report: React.FC = () => {
                                 </ResponsiveContainer>
                             </div>
                             <div className="t("auto.CreateField.028d2a3b")">
-                                <h3 className="text-xl font-bold">Risk Assessment Matrix</h3>
+                                <h3 className="text-xl font-bold">t("auto.Report.3177ea52") Matrix</h3>
                                 {riskData.map((item, i) => (
                                     <div key={i} className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
                                         <div className="flex items-center gap-2 mb-3">
@@ -410,7 +410,7 @@ const Report: React.FC = () => {
                                         </div>
                                         <p className="text-gray-600 mb-4">{item.description}</p>
                                         <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                                            <h5 className="font-semibold text-sm mb-2 text-green-800">💡 Mitigation Strategy</h5>
+                                            <h5 className="font-semibold text-sm mb-2 text-green-800">💡 Mitigation t("auto.Report.83de191c")</h5>
                                             <p className="text-sm text-gray-700">{item.mitigation}</p>
                                         </div>
                                     </div>
@@ -419,19 +419,19 @@ const Report: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Recommendations */}
+                    {/* t("auto.Report.5259ae4a") */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Recommendations</h2>
+                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">t("auto.Report.5259ae4a")</h2>
                         <div className="t("auto.Report.ae382999")">
                             <div>
-                                <h3 className="text-xl font-bold mb-4">Strategic Recommendations</h3>
+                                <h3 className="text-xl font-bold mb-4">Strategic t("auto.Report.5259ae4a")</h3>
                                 <p className="text-gray-600 mb-6">AI-generated actionable insights to maximize success probability and mitigate risks.</p>
                             </div>
                             <div className="t("auto.Step1_BasicInfo.eeefd75c")">
                                 {recommendations.map((item, i) => (
                                     <div key={i} className={`border-l-4 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow ${
-                                        item.priority === 'High' ? 'border-red-500 bg-red-50' : 
-                                        item.priority === 'Medium' ? 'border-yellow-500 bg-yellow-50' : 
+                                        item.priority === 't("auto.Report.655d20c1")' ? 'border-red-500 bg-red-50' : 
+                                        item.priority === 't("auto.Report.87f8a6ab")' ? 'border-yellow-500 bg-yellow-50' : 
                                         'border-green-500 bg-green-50'
                                     }`}>
                                         <div className="flex justify-between items-start mb-3">
@@ -439,8 +439,8 @@ const Report: React.FC = () => {
                                                 <div className="flex items-center gap-3 mb-2">
                                                     <h4 className="font-bold text-lg">{item.title}</h4>
                                                     <span className={`text-xs font-bold uppercase px-2 py-1 rounded ${
-                                                        item.priority === 'High' ? 'bg-red-200 text-red-800' : 
-                                                        item.priority === 'Medium' ? 'bg-yellow-200 text-yellow-800' : 
+                                                        item.priority === 't("auto.Report.655d20c1")' ? 'bg-red-200 text-red-800' : 
+                                                        item.priority === 't("auto.Report.87f8a6ab")' ? 'bg-yellow-200 text-yellow-800' : 
                                                         'bg-green-200 text-green-800'
                                                     }`}>
                                                         {item.priority} PRIORITY
@@ -464,12 +464,12 @@ const Report: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Benchmarks */}
+                    {/* t("auto.Report.0139c29e") */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">Benchmarks</h2>
+                        <h2 className="text-2xl font-bold mb-6 pb-2 border-b">t("auto.Report.0139c29e")</h2>
                         <div className="t("auto.Report.ae382999")">
                             <div>
-                                <h3 className="text-xl font-bold mb-4">Industry Performance Benchmarks</h3>
+                                <h3 className="text-xl font-bold mb-4">Industry Performance t("auto.Report.0139c29e")</h3>
                                 <p className="text-gray-600 mb-6">Compare your business metrics against industry averages and top performers.</p>
                             </div>
                             {benchmarks.map((item, i) => (
@@ -504,7 +504,7 @@ const Report: React.FC = () => {
                                             <p className="text-xs text-gray-700">
                                                 {item.yourValue >= item.topPerformers ? '🎉 Excellent! You are performing at top tier level.' :
                                                  item.yourValue >= item.industryAverage ? '👍 Good! You are above industry average.' :
-                                                 '📈 Opportunity for improvement to reach industry standards.'}
+                                                 't("auto.Report.b37be9d8")'}
                                             </p>
                                         </div>
                                     </div>
@@ -533,13 +533,13 @@ const Report: React.FC = () => {
         
         // Normal tab-based rendering
         switch(activeTab) {
-            case 'Executive Summary': return (
+            case 't("auto.Report.a573d92b")': return (
                 <div className="t("auto.Report.ae382999")">
                     {analysis.executiveSummary && (
                         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                             <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
                                 <Lightbulb className="w-5 h-5 text-blue-600" />
-                                Executive Summary
+                                t("auto.Report.a573d92b")
                             </h3>
                             <p className="text-gray-700 leading-relaxed">{analysis.executiveSummary}</p>
                         </div>
@@ -583,7 +583,7 @@ const Report: React.FC = () => {
                     </div>
                 </div>
             );
-            case 'Financial Projections': return (
+            case 't("auto.Report.a2fdd734")': return (
                 <div className="t("auto.Report.ae382999")">
                     <div>
                         <h3 className="text-xl font-bold mb-4">5-Year Revenue & Profit Projections</h3>
@@ -662,7 +662,7 @@ const Report: React.FC = () => {
                     </div>
                 </div>
             );
-            case 'Risk Assessment': return (
+            case 't("auto.Report.3177ea52")': return (
                 <div className="t("auto.Report.ae382999")">
                     <div>
                         <h3 className="text-xl font-bold mb-4">Risk Analysis Overview</h3>
@@ -677,7 +677,7 @@ const Report: React.FC = () => {
                         </ResponsiveContainer>
                     </div>
                     <div className="t("auto.CreateField.028d2a3b")">
-                        <h3 className="text-xl font-bold">Risk Assessment Matrix</h3>
+                        <h3 className="text-xl font-bold">t("auto.Report.3177ea52") Matrix</h3>
                         {riskData.map((item, i) => (
                             <div key={i} className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
                                 <div className="flex items-center gap-2 mb-3">
@@ -689,7 +689,7 @@ const Report: React.FC = () => {
                                 </div>
                                 <p className="text-gray-600 mb-4">{item.description}</p>
                                 <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                                    <h5 className="font-semibold text-sm mb-2 text-green-800">💡 Mitigation Strategy</h5>
+                                    <h5 className="font-semibold text-sm mb-2 text-green-800">💡 Mitigation t("auto.Report.83de191c")</h5>
                                     <p className="text-sm text-gray-700">{item.mitigation}</p>
                                 </div>
                             </div>
@@ -697,17 +697,17 @@ const Report: React.FC = () => {
                     </div>
                 </div>
             );
-            case 'Recommendations': return (
+            case 't("auto.Report.5259ae4a")': return (
                 <div className="t("auto.Report.ae382999")">
                     <div>
-                        <h3 className="text-xl font-bold mb-4">Strategic Recommendations</h3>
+                        <h3 className="text-xl font-bold mb-4">Strategic t("auto.Report.5259ae4a")</h3>
                         <p className="text-gray-600 mb-6">AI-generated actionable insights to maximize success probability and mitigate risks.</p>
                     </div>
                     <div className="t("auto.Step1_BasicInfo.eeefd75c")">
                         {recommendations.map((item, i) => (
                             <div key={i} className={`border-l-4 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow ${
-                                item.priority === 'High' ? 'border-red-500 bg-red-50' : 
-                                item.priority === 'Medium' ? 'border-yellow-500 bg-yellow-50' : 
+                                item.priority === 't("auto.Report.655d20c1")' ? 'border-red-500 bg-red-50' : 
+                                item.priority === 't("auto.Report.87f8a6ab")' ? 'border-yellow-500 bg-yellow-50' : 
                                 'border-green-500 bg-green-50'
                             }`}>
                                 <div className="flex justify-between items-start mb-3">
@@ -715,8 +715,8 @@ const Report: React.FC = () => {
                                         <div className="flex items-center gap-3 mb-2">
                                             <h4 className="font-bold text-lg">{item.title}</h4>
                                             <span className={`text-xs font-bold uppercase px-2 py-1 rounded ${
-                                                item.priority === 'High' ? 'bg-red-200 text-red-800' : 
-                                                item.priority === 'Medium' ? 'bg-yellow-200 text-yellow-800' : 
+                                                item.priority === 't("auto.Report.655d20c1")' ? 'bg-red-200 text-red-800' : 
+                                                item.priority === 't("auto.Report.87f8a6ab")' ? 'bg-yellow-200 text-yellow-800' : 
                                                 'bg-green-200 text-green-800'
                                             }`}>
                                                 {item.priority} PRIORITY
@@ -739,10 +739,10 @@ const Report: React.FC = () => {
                     </div>
                 </div>
             );
-            case 'Benchmarks': return (
+            case 't("auto.Report.0139c29e")': return (
                 <div className="t("auto.Report.ae382999")">
                     <div>
-                        <h3 className="text-xl font-bold mb-4">Industry Performance Benchmarks</h3>
+                        <h3 className="text-xl font-bold mb-4">Industry Performance t("auto.Report.0139c29e")</h3>
                         <p className="text-gray-600 mb-6">Compare your business metrics against industry averages and top performers.</p>
                     </div>
                     {benchmarks.map((item, i) => (
@@ -777,7 +777,7 @@ const Report: React.FC = () => {
                                     <p className="text-xs text-gray-700">
                                         {item.yourValue >= item.topPerformers ? '🎉 Excellent! You are performing at top tier level.' :
                                          item.yourValue >= item.industryAverage ? '👍 Good! You are above industry average.' :
-                                         '📈 Opportunity for improvement to reach industry standards.'}
+                                         't("auto.Report.b37be9d8")'}
                                     </p>
                                 </div>
                             </div>
@@ -828,18 +828,18 @@ const Report: React.FC = () => {
     }
 
     const tabs: {name: Tab, icon: React.ElementType}[] = [
-        { name: 'Executive Summary', icon: Award },
-        { name: 'Financial Projections', icon: TrendingUp },
-        { name: 'Risk Assessment', icon: Shield },
-        { name: 'Recommendations', icon: BarChart3 },
-        { name: 'Benchmarks', icon: BarChart3 },
+        { name: 't("auto.Report.a573d92b")', icon: Award },
+        { name: 't("auto.Report.a2fdd734")', icon: TrendingUp },
+        { name: 't("auto.Report.3177ea52")', icon: Shield },
+        { name: 't("auto.Report.5259ae4a")', icon: BarChart3 },
+        { name: 't("auto.Report.0139c29e")', icon: BarChart3 },
     ];
 
     const StatCard = ({ title, value, icon: Icon, change }: {title: string, value: string, icon: React.ElementType, change?: number}) => (
         <div className="bg-white p-4 rounded-lg border border-gray-200 flex-1">
             <div className="flex items-center gap-3">
-                <div className={`p-2 rounded-full ${riskStyles.Low.bg}`}>
-                    <Icon className={`w-5 h-5 ${riskStyles.Low.text}`} />
+                <div className={`p-2 rounded-full ${riskStyles.t("auto.Report.28d0edd0").bg}`}>
+                    <Icon className={`w-5 h-5 ${riskStyles.t("auto.Report.28d0edd0").text}`} />
                 </div>
                 <div>
                     <p className="text-sm text-gray-500">{title}</p>
@@ -868,7 +868,7 @@ const Report: React.FC = () => {
             <div ref={reportRef}>
             <div className="bg-green-50/50 p-6 rounded-lg border border-green-200 mb-8">
                 <div className="flex justify-between items-center">
-                    <p className="text-sm font-semibold text-gray-600">Overall Score</p>
+                    <p className="text-sm font-semibold text-gray-600">t("auto.Report.9cf6d0d6")</p>
                     <p className="text-4xl font-bold text-primary-green">{analysis.score}</p>
                 </div>
             </div>

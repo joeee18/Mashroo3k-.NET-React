@@ -264,7 +264,7 @@ const AdminLogs: React.FC = () => {
                                 value={refreshInterval}
                                 onChange={(e) => setRefreshInterval(Number(e.target.value))}
                                 className="h-8 px-2 border border-gray-300 rounded text-xs"
-                                aria-label="Auto-refresh interval"
+                                aria-label="t("auto.AdminLogs.0ea33efb")"
                             >
                                 <option value="3">3s</option>
                                 <option value="5">5s</option>
@@ -324,7 +324,7 @@ const AdminLogs: React.FC = () => {
                         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                             type="t("auto.Program.1cb251ec")"
-                            placeholder="Search logs..."
+                            placeholder="t("auto.AdminLogs.412a9c03")"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="h-10 pl-10 pr-4 bg-white border border-gray-300 rounded-md text-sm w-full"

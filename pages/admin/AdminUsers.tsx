@@ -160,7 +160,7 @@ const AdminUsers: React.FC = () => {
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                     <input
                         type="t("auto.Program.1cb251ec")"
-                        placeholder="Search users..."
+                        placeholder="t("auto.AdminUsers.f5e8b59c")"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                         className="w-full h-10 pl-10 pr-4 bg-white border border-gray-300 rounded-md text-sm"

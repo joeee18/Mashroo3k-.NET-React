@@ -25,36 +25,36 @@ const DeveloperLogs: React.FC = () => {
             timestamp: '2023-06-20T14:30:22.123Z',
             level: 'info',
             message: 'User john@example.com logged in successfully',
-            source: 'AuthService',
+            source: 't("auto.DeveloperLogs.f33a1d77")',
             userId: 'user-123'
         },
         {
             id: '2',
             timestamp: '2023-06-20T14:29:45.456Z',
             level: 'error',
-            message: 'Failed to connect to database: Connection timeout',
-            source: 'DatabaseService',
+            message: 't("auto.DeveloperLogs.d66f8bd9")',
+            source: 't("auto.DeveloperLogs.66daa9bd")',
         },
         {
             id: '3',
             timestamp: '2023-06-20T14:28:12.789Z',
             level: 'warn',
             message: 'High memory usage detected: 85% of available memory in use',
-            source: 'SystemMonitor',
+            source: 't("auto.DeveloperLogs.f12a3e09")',
         },
         {
             id: '4',
             timestamp: '2023-06-20T14:27:33.012Z',
             level: 'debug',
-            message: 'Template analysis request processed in 142ms',
-            source: 'TemplateService',
+            message: 't("auto.DeveloperLogs.c62bc59b")',
+            source: 't("auto.DeveloperLogs.8295eefe")',
         },
         {
             id: '5',
             timestamp: '2023-06-20T14:26:55.345Z',
             level: 'info',
             message: 'New template "Business Plan" created by admin@mashroo3k.com',
-            source: 'TemplateService',
+            source: 't("auto.DeveloperLogs.8295eefe")',
             userId: 'admin-456'
         },
         {
@@ -62,26 +62,26 @@ const DeveloperLogs: React.FC = () => {
             timestamp: '2023-06-20T14:25:17.678Z',
             level: 'error',
             message: 'API key validation failed for request from 192.168.1.100',
-            source: 'AuthMiddleware',
+            source: 't("auto.DeveloperLogs.677e02b2")',
         },
         {
             id: '7',
             timestamp: '2023-06-20T14:24:44.901Z',
             level: 'info',
-            message: 'Scheduled backup completed successfully',
-            source: 'BackupService',
+            message: 't("auto.DeveloperLogs.30565460")',
+            source: 't("auto.DeveloperLogs.67676a01")',
         },
         {
             id: '8',
             timestamp: '2023-06-20T14:23:22.234Z',
             level: 'warn',
-            message: 'Rate limit exceeded for user user-789',
-            source: 'RateLimiter',
+            message: 't("auto.DeveloperLogs.c33672fc")',
+            source: 't("auto.DeveloperLogs.123fd323")',
             userId: 'user-789'
         },
     ];
 
-    const sources = ['all', 'AuthService', 'DatabaseService', 'SystemMonitor', 'TemplateService', 'AuthMiddleware', 'BackupService', 'RateLimiter'];
+    const sources = ['all', 't("auto.DeveloperLogs.f33a1d77")', 't("auto.DeveloperLogs.66daa9bd")', 't("auto.DeveloperLogs.f12a3e09")', 't("auto.DeveloperLogs.8295eefe")', 't("auto.DeveloperLogs.677e02b2")', 't("auto.DeveloperLogs.67676a01")', 't("auto.DeveloperLogs.123fd323")'];
 
     useEffect(() => {
         loadLogs();
@@ -218,7 +218,7 @@ const DeveloperLogs: React.FC = () => {
                             </div>
                             <input
                                 type="t("auto.Program.1cb251ec")"
-                                placeholder="Search logs..."
+                                placeholder="t("auto.DeveloperLogs.412a9c03")"
                                 className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-green-500 focus:border-green-500"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}

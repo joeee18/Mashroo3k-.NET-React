@@ -187,8 +187,8 @@ const NotificationDropdown: React.FC = () => {
         const date = new Date(dateString);
         // Check if date is valid
         if (isNaN(date.getTime())) {
-            console.log('Invalid date string:', dateString);
-            return 'Invalid date';
+            console.log('t("auto.NotificationDropdown.6983e1db") string:', dateString);
+            return 't("auto.NotificationDropdown.6983e1db")';
         }
         
         const now = new Date();
@@ -200,7 +200,7 @@ const NotificationDropdown: React.FC = () => {
         
         // Less than a minute
         if (diffInSeconds < 60) {
-            return 'Just now';
+            return 't("auto.NotificationDropdown.58038ee4")';
         }
         
         const diffInMinutes = Math.floor(diffInSeconds / 60);

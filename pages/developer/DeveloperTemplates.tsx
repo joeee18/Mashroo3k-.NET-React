@@ -69,7 +69,7 @@ const DeveloperTemplates: React.FC = () => {
 
             setTemplates(translatedTemplates);
         } catch (err: any) {
-            console.error('Failed to load templates', err);
+            console.error('t("auto.DeveloperTemplates.6d0f42e7")', err);
             setError(err?.message || 'Failed to load templates');
         } finally {
             setLoading(false);
