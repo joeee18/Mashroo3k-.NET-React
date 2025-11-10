@@ -1,0 +1,47 @@
+# Example of replacing hardcoded strings with translation keys
+
+## Before (hardcoded strings):
+
+// In add_templates.js line 59:
+const templateData = {
+  name: "AI Business Idea Validator",
+  // ...
+};
+
+// In components/analysis/Step1_BasicInfo.tsx line 203:
+<h2 className="text-2xl font-bold mb-6">Basic Information</h2>
+
+## After (using translation keys):
+
+// In add_templates.js line 59:
+const templateData = {
+  name: t('developer.templateBuilder.aiBusinessValidator'),
+  // ...
+};
+
+// In components/analysis/Step1_BasicInfo.tsx line 203:
+<h2 className="text-2xl font-bold mb-6">{t('common.basicInformation')}</h2>
+
+## Before (hardcoded HTML attributes):
+
+// In components/layout/Header.tsx line 103:
+<span className="sr-only">Open user menu</span>
+
+## After (using translation keys):
+
+// In components/layout/Header.tsx line 103:
+<span className="sr-only">{t('common.openUserMenu')}</span>
+
+## Before (hardcoded form labels):
+
+// In components/analysis/Step1_BasicInfo.tsx line 15-17:
+<label className="block text-gray-700 text-sm font-bold mb-2">
+  {label} {required && '*'}
+</label>
+
+## After (using translation keys):
+
+// In components/analysis/Step1_BasicInfo.tsx line 15-17:
+<label className="block text-gray-700 text-sm font-bold mb-2">
+  {t(label)} {required && '*'}
+</label>

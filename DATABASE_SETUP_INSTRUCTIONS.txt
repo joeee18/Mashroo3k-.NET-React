@@ -1,0 +1,188 @@
+DATABASE SETUP INSTRUCTIONS FOR MASROO3K
+
+1. DATABASE CREATION:
+   - Open phpMyAdmin
+   - Create a new database named "Masroo3k"
+   - Username: root
+   - Password: (leave empty)
+
+2. TABLE CREATION:
+   Create the following tables in the Masroo3k database:
+
+   TABLE 1: Users
+   Fields:
+   - Id (INT, AUTO_INCREMENT, PRIMARY KEY)
+   - Name (VARCHAR(255), NOT NULL)
+   - Email (VARCHAR(255), NOT NULL, UNIQUE)
+   - PasswordHash (VARCHAR(255), NOT NULL)
+   - Role (VARCHAR(50), NOT NULL, DEFAULT 'user')
+   - CreatedAt (DATETIME, NOT NULL, DEFAULT CURRENT_TIMESTAMP)
+   
+   Index:
+   - IX_Users_Email on Email column
+
+   TABLE 2: Templates
+   Fields:
+   - Id (INT, AUTO_INCREMENT, PRIMARY KEY)
+   - Name (VARCHAR(255), NOT NULL)
+   - Description (TEXT)
+   - Category (VARCHAR(100), NOT NULL, DEFAULT 'General')
+   - Duration (INT, NOT NULL, DEFAULT 30)
+   - IsPopular (BOOLEAN, NOT NULL, DEFAULT FALSE)
+   - CreatedAt (DATETIME, NOT NULL, DEFAULT CURRENT_TIMESTAMP)
+
+   TABLE 3: Analyses
+   Fields:
+   - Id (INT, AUTO_INCREMENT, PRIMARY KEY)
+   - Title (VARCHAR(255), NOT NULL)
+   - Content (TEXT)
+   - Score (INT, NOT NULL, DEFAULT 0)
+   - RiskLevel (VARCHAR(50), NOT NULL, DEFAULT 'Medium')
+   - SuccessPercent (INT, NOT NULL, DEFAULT 0)
+   - Investment (DECIMAL(18,2), NOT NULL, DEFAULT 0)
+   - ExpectedROI (DECIMAL(18,2), NOT NULL, DEFAULT 0)
+   - CreatedAt (DATETIME, NOT NULL, DEFAULT CURRENT_TIMESTAMP)
+   - ExecutiveSummary (TEXT)
+   - KeyFindings (TEXT)
+   - Recommendations (TEXT)
+   - OwnerId (INT, NOT NULL)
+   - TemplateId (INT)
+   
+   Foreign Keys:
+   - OwnerId references Users(Id) with CASCADE DELETE
+   - TemplateId references Templates(Id) with SET NULL
+
+   TABLE 4: ActivityLogs
+   Fields:
+   - Id (INT, AUTO_INCREMENT, PRIMARY KEY)
+   - Action (VARCHAR(100), NOT NULL)
+   - EntityType (VARCHAR(100), NOT NULL)
+   - EntityId (INT)
+   - Description (TEXT, NOT NULL)
+   - Details (TEXT)
+   - IpAddress (VARCHAR(45), NOT NULL)
+   - UserAgent (TEXT, NOT NULL)
+   - CreatedAt (DATETIME, NOT NULL, DEFAULT CURRENT_TIMESTAMP)
+   - Severity (VARCHAR(20), NOT NULL, DEFAULT 'Info')
+   - UserId (INT)
+   
+   Foreign Keys:
+   - UserId references Users(Id) with SET NULL
+   
+   Indexes:
+   - IX_ActivityLogs_CreatedAt on CreatedAt column
+   - IX_ActivityLogs_Action on Action column
+   - IX_ActivityLogs_Severity on Severity column
+
+   TABLE 5: Notifications
+   Fields:
+   - Id (INT, AUTO_INCREMENT, PRIMARY KEY)
+   - UserId (INT, NOT NULL)
+   - Title (VARCHAR(255), NOT NULL)
+   - Message (TEXT, NOT NULL)
+   - Type (VARCHAR(20), NOT NULL, DEFAULT 'info')
+   - IsRead (BOOLEAN, NOT NULL, DEFAULT FALSE)
+   - CreatedAt (DATETIME, NOT NULL, DEFAULT CURRENT_TIMESTAMP)
+   - ActionUrl (VARCHAR(500))
+   
+   Foreign Keys:
+   - UserId references Users(Id) with CASCADE DELETE
+   
+   Indexes:
+   - IX_Notifications_CreatedAt on CreatedAt column
+   - IX_Notifications_IsRead on IsRead column
+
+3. DATA SEEDING:
+   Insert the following default data:
+
+   USERS:
+   1. System Administrator
+      - Email: admin@mashroo3k.com
+      - PasswordHash: $2a$11$8hS8vF8mYOAbC.0vDgF0yOvZaPq4hZ2Q8lS5P9yT8nR4qZ2Q8lS5O
+      - Role: admin
+      - CreatedAt: Current timestamp
+
+   2. John Doe
+      - Email: john@example.com
+      - PasswordHash: $2a$11$8hS8vF8mYOAbC.0vDgF0yOvZaPq4hZ2Q8lS5P9yT8nR4qZ2Q8lS5O
+      - Role: user
+      - CreatedAt: Current timestamp
+
+   TEMPLATES:
+   1. AI Business Idea Validator
+      - Description: Validate your business idea with AI-powered analysis covering core concept, financial hypotheses, feasibility, market validation, and critical assumptions.
+      - Category: Business Validation
+      - Duration: 25
+      - IsPopular: TRUE
+      - CreatedAt: Current timestamp
+
+   2. AI-Powered SWOT & PESTEL Builder
+      - Description: Comprehensive SWOT and PESTEL analysis to evaluate your business strengths, weaknesses, opportunities, threats, and external factors.
+      - Category: SWOT & PESTEL
+      - Duration: 30
+      - IsPopular: TRUE
+      - CreatedAt: Current timestamp
+
+   3. Building the Marketing Plan
+      - Description: Create a comprehensive marketing plan with target audience definition, budget allocation, channels, USP, and KPIs.
+      - Category: Marketing
+      - Duration: 20
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+   4. Financial Performance Assessment
+      - Description: Evaluate your financial health with detailed analysis of revenue, costs, profits, and advanced financial metrics.
+      - Category: Financial
+      - Duration: 20
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+   5. Assessing Growth Readiness
+      - Description: Determine your business readiness for growth with operational efficiency, leadership, scalability, and financial runway analysis.
+      - Category: Growth
+      - Duration: 25
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+   6. Gap Analysis
+      - Description: Identify gaps between your current state and future goals with financial baselines, operational capabilities, and market position analysis.
+      - Category: Gap Analysis
+      - Duration: 20
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+   7. AI Business Health Check
+      - Description: Comprehensive health check of your business covering identity, financial indicators, operational efficiency, market relationships, and business vitals.
+      - Category: Health Check
+      - Duration: 15
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+   8. Digital Maturity Assessment
+      - Description: Assess your digital maturity across identity, investment, tools, engagement, and dimensions of digital capability.
+      - Category: Digital
+      - Duration: 25
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+   9. AI Pitch Deck Generator
+      - Description: Create a compelling pitch deck with core idea, financial model, product details, competitive landscape, and team information.
+      - Category: Pitch Deck
+      - Duration: 30
+      - IsPopular: TRUE
+      - CreatedAt: Current timestamp
+
+   10. AI-Based Market Opportunity Analyzer
+      - Description: Analyze market opportunities with company identity, financial capacity, core competencies, strategic posture, and market evaluation.
+      - Category: Market Opportunity
+      - Duration: 25
+      - IsPopular: FALSE
+      - CreatedAt: Current timestamp
+
+4. HOW TO EXECUTE IN PHPMYADMIN:
+   - Select the "Masroo3k" database
+   - Go to the "SQL" tab
+   - Copy and paste each CREATE TABLE statement one by one
+   - Execute each statement
+   - Add foreign key constraints through the "Relation view" or with ALTER TABLE statements
+   - Run the INSERT statements to seed the data

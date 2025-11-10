@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "o91WgHcxdYE=",
+  "success": true,
+  "projectFilePath": "D:\\Masroo3k\\AddTemplateFields\\AddTemplateFields.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\system.io.pipelines\\9.0.10\\system.io.pipelines.9.0.10.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.text.encodings.web\\9.0.10\\system.text.encodings.web.9.0.10.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.text.json\\9.0.10\\system.text.json.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

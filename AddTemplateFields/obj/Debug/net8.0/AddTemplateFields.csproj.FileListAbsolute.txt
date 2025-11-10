@@ -1,0 +1,5 @@
+D:\Masroo3k\AddTemplateFields\obj\Debug\net8.0\AddTemplateFields.csproj.AssemblyReference.cache
+D:\Masroo3k\AddTemplateFields\obj\Debug\net8.0\AddTemplateFields.GeneratedMSBuildEditorConfig.editorconfig
+D:\Masroo3k\AddTemplateFields\obj\Debug\net8.0\AddTemplateFields.AssemblyInfoInputs.cache
+D:\Masroo3k\AddTemplateFields\obj\Debug\net8.0\AddTemplateFields.AssemblyInfo.cs
+D:\Masroo3k\AddTemplateFields\obj\Debug\net8.0\AddTemplateFields.csproj.CoreCompileInputs.cache
